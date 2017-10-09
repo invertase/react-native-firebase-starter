@@ -1,0 +1,24 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'RNFirebaseStarter' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for RNFirebaseStarter
+
+  # Required by RNFirebase
+  pod 'Firebase/Core'
+
+  # [OPTIONAL PODS] - comment out pods for firebase products you won't be using.
+  pod 'Firebase/AdMob'
+  pod 'Firebase/Auth'
+  pod 'Firebase/Crash'
+  pod 'Firebase/Database'
+  pod 'Firebase/DynamicLinks'
+  pod 'Firebase/Performance'
+  pod 'Firebase/Firestore'
+  pod 'Firebase/Messaging'
+  pod 'Firebase/RemoteConfig'
+  pod 'Firebase/Storage'
+end

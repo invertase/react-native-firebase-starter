@@ -1,0 +1,13 @@
+node_modules/
+.expo/
+npm-debug.*
+/ios/Pods/
+/ios/build/
+.idea
+/android/app/build/
+/android/gradle/
+/android/.idea
+/android/.gradle/
+/android/keystores/
+/android/local.properties
+/ios/RNFirebaseStarter.xcodeproj/xcuserdata/
