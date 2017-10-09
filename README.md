@@ -11,7 +11,7 @@ If you're only developing for one platform you can ignore the steps below that a
 - 1.1) `git clone https://github.com/invertase/react-native-firebase-starter.git`
 - 1.2) `cd react-native-firebase-starter` - cd into your newly created project directory.
 - 1.3) Install NPM packages with your package manager of choice - i.e run `yarn` or `npm install`
-- 1.4) **[iOS]** `cd ios` and run `pod install` - if you don't have CocoaPods you can follow [these install instructions](https://guides.cocoapods.org/using/getting-started.html#getting-started)
+- 1.4) **[iOS]** `cd ios` and run `pod install` - if you don't have CocoaPods you can follow [these instructions](https://guides.cocoapods.org/using/getting-started.html#getting-started) to install it.
 - 1.5) **[Android]** No additional steps for android here.
 
 #### 2) Add `Google Services` files (plist & JSON)
