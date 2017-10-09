@@ -1,6 +1,6 @@
 ## React Native Firebase Starter
 
-A basic react app with [`react-native-firebase`](https://github.com/invertase/react-native-firebase) pre-integrated so you can get started quickly.
+A basic react native app with [`react-native-firebase`](https://github.com/invertase/react-native-firebase) pre-integrated so you can get started quickly.
 
 ### Getting Started
 
