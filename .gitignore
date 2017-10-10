@@ -5,7 +5,6 @@ npm-debug.*
 /ios/build/
 .idea
 /android/app/build/
-/android/gradle/
 /android/.idea
 /android/.gradle/
 /android/keystores/
