@@ -118,10 +118,6 @@ const renameCompanyFiles = (name) => {
     })
 }
 
-const newCompanyName = 'magicalcompany';
-const newProjectName = 'TestTemplate';
-const newPackageName = 'com.magicalcompany.testtemplate';
-
 const run = async () => {
     console.log('------------------------------');
     let projectName = await readInput('Project name, e.g. My Amazing Project');
