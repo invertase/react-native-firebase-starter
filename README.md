@@ -1,9 +1,10 @@
 # React Native Firebase Starter<a href="https://rnfirebase.io"><img align="left" src="http://i.imgur.com/01XQL0x.png"></a>
 
-[![Backers on Open Collective](https://opencollective.com/react-native-firebase/backers/badge.svg)](#backers) [![Sponsors on Open Collective](https://opencollective.com/react-native-firebase/sponsors/badge.svg)](#sponsors) [![npm version](https://img.shields.io/npm/v/react-native-firebase.svg?style=flat-square)](https://www.npmjs.com/package/react-native-firebase)
+[![Backers on Open Collective](https://opencollective.com/react-native-firebase/backers/badge.svg)](#backers)
+[![Sponsors on Open Collective](https://opencollective.com/react-native-firebase/sponsors/badge.svg)](#sponsors)
+[![npm version](https://img.shields.io/npm/v/react-native-firebase.svg?style=flat-square)](https://www.npmjs.com/package/react-native-firebase)
 [![NPM downloads](https://img.shields.io/npm/dm/react-native-firebase.svg?style=flat-square)](https://www.npmjs.com/package/react-native-firebase)
 [![Chat](https://img.shields.io/badge/chat-on%20discord-7289da.svg?style=flat-square)](https://discord.gg/t6bdqMs)
-[![Donate](https://img.shields.io/badge/Donate-Patreon-green.svg?style=flat-square)](https://www.patreon.com/invertase)
 [![Twitter Follow](https://img.shields.io/twitter/follow/rnfirebase.svg?style=social&label=Follow)](https://twitter.com/rnfirebase)
 
 ---
@@ -25,17 +26,23 @@ If you're only developing for one platform you can ignore the steps below that a
 - 1.4) **[iOS]** `cd ios` and run `pod install` - if you don't have CocoaPods you can follow [these instructions](https://guides.cocoapods.org/using/getting-started.html#getting-started) to install it.
 - 1.5) **[Android]** No additional steps for android here.
 
-#### 2) Add `Google Services` files (plist & JSON)
+#### 2) Rename Project
 
-- 2.1) **[iOS]** Follow the `add firebase to your app` instructions [here](https://firebase.google.com/docs/ios/setup#add_firebase_to_your_app) to generate your `GoogleService-Info.plist` file if you haven't done so already. Place this file in the `ios/` directory of your project.
-- 2.2) **[Android]** Follow the `manually add firebase` to your app instructions [here](https://firebase.google.com/docs/android/setup#manually_add_firebase) to generate your `google-services.json` file if you haven't done so already. Place this file in the `android/app/` directory of your project.
-  - The current package name is set to `com.rnfirebasestarter`
+- 2.1) `npm run rename` - you'll be prompted to enter a project name and company name
+- 2.2) Note down the package name value - you'll need this when setting up your Firebase project
+
+#### 3) Add `Google Services` files (plist & JSON)
+
+- 3.1) **[iOS]** Follow the `add firebase to your app` instructions [here](https://firebase.google.com/docs/ios/setup#add_firebase_to_your_app) to generate your `GoogleService-Info.plist` file if you haven't done so already - use the package name generated previously as your `iOS bundle ID`.
+- 3.2) **[iOS]** Place this file in the `ios/` directory of your project.
+- 3.3) **[Android]** Follow the `manually add firebase` to your app instructions [here](https://firebase.google.com/docs/android/setup#manually_add_firebase) to generate your `google-services.json` file if you haven't done so already - use the package name generated previously as your `Android package name`.
+- 3.4) Place this file in the `android/app/` directory of your project.
   
-#### 3) Start your app
+#### 4) Start your app
 
-- 3.1) Start the react native packager, run `yarn run start` or `npm run start` from the root of your project.
-- 3.2) **[iOS]** Build and run the iOS app, run `react-native run-ios` from the root of your project. The first build will take some time. This will automatically start up a simulator also for you on a successful build if one wasn't already started.
-- 3.3) **[Android]** If you haven't already got an android device attached/emulator running then you'll need to get one running (make sure the emulator is with Google Play / APIs). When ready run `react-native run-android` from the root of your project.
+- 4.1) Start the react native packager, run `yarn run start` or `npm run start` from the root of your project.
+- 4.2) **[iOS]** Build and run the iOS app, run `react-native run-ios` from the root of your project. The first build will take some time. This will automatically start up a simulator also for you on a successful build if one wasn't already started.
+- 4.3) **[Android]** If you haven't already got an android device attached/emulator running then you'll need to get one running (make sure the emulator is with Google Play / APIs). When ready run `react-native run-android` from the root of your project.
 
 If all has gone well you'll see an initial screen like the one below.
   

@@ -119,19 +119,19 @@ const renameCompanyFiles = (name) => {
 }
 
 const run = async () => {
-    console.log('------------------------------');
+    console.log('---------------------------------------------------------');
     let projectName = await readInput('Project name, e.g. My Amazing Project');
+    console.log('---------------------------------------------------------');
     if (!projectName || projectName === '') {
-        throw new Error('Please supply a valid project name');
+        throw new Error('ERROR: Please supply a valid project name');
     }
     
-    console.log('------------------------------');
     let companyName = await readInput('Company name, e.g. My Company');
+    console.log('---------------------------------------------------------');
     if (!companyName || companyName === '') {
-        throw new Error('Please supply a valid company name');
+        throw new Error('ERROR: Please supply a valid company name');
     }
     
-    console.log('------------------------------');
     projectName = projectName.replace(/ /g, '');
     companyName = companyName.replace(/ /g, '').toLowerCase();
     
@@ -139,23 +139,25 @@ const run = async () => {
     // Close the input
     rl.close();
     
-    console.log();
-    console.log('------------------------------');
-    console.log('Setting project parameters to:');
-    console.log('------------------------------');
-    console.log('Project name: ', projectName);
-    console.log('Company name: ', companyName);
-    console.log('Package name: ', packageName);
-    console.log('------------------------------');
-    console.log();
-    
     updateProjectName(projectName)
         .then(() => updatePackageName(packageName))
         .then(() => renameProjectFiles(projectName))
-        .then(() => renameCompanyFiles(companyName));
+        .then(() => renameCompanyFiles(companyName))
+        .then(() => {
+            console.log();
+            console.log('---------------------------------------------------------');
+            console.log('Set project parameters to:');
+            console.log('---------------------------------------------------------');
+            console.log('Project name: ', projectName);
+            console.log('Company name: ', companyName);
+            console.log('Package name: ', packageName);
+            console.log('---------------------------------------------------------');
+            console.log();
+        });
 }
 
 run().catch((error) => {
     console.error(error.message);
+    console.log('---------------------------------------------------------');
     process.exit();
 });
