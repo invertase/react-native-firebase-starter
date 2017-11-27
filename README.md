@@ -28,6 +28,8 @@ If you're only developing for one platform you can ignore the steps below that a
 
 #### 2) Rename Project
 
+** You will need to be running Node verison 7.6 or greater for the rename functionality to work **
+
 - 2.0) **[iOS]** `cd ..` to return to the root directory of the project
 - 2.1) `npm run rename` - you'll be prompted to enter a project name and company name
 - 2.2) Note down the package name value - you'll need this when setting up your Firebase project
