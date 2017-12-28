@@ -96,6 +96,7 @@ const renameProjectFiles = (name) => {
     console.log('---------------------------------------');
     return new Promise((resolve, reject) => {
         renameFiles(BASE_DIRECTORY, DEFAULT_PROJECT_NAME, name);
+        renameFiles(BASE_DIRECTORY, DEFAULT_PROJECT_NAME.toLowerCase(), name.toLowerCase());
         console.log('---------------------------------------');
         console.log('Finished renaming project files');
         console.log('---------------------------------------');
@@ -125,20 +126,20 @@ const run = async () => {
     if (!projectName || projectName === '') {
         throw new Error('ERROR: Please supply a valid project name');
     }
-    
+
     let companyName = await readInput('Company name, e.g. My Company');
     console.log('---------------------------------------------------------');
     if (!companyName || companyName === '') {
         throw new Error('ERROR: Please supply a valid company name');
     }
-    
+
     projectName = projectName.replace(/ /g, '');
     companyName = companyName.replace(/ /g, '').toLowerCase();
-    
+
     const packageName = `com.${companyName}.${projectName.toLowerCase()}`;
     // Close the input
     rl.close();
-    
+
     updateProjectName(projectName)
         .then(() => updatePackageName(packageName))
         .then(() => renameProjectFiles(projectName))
