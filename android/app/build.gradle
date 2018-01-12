@@ -153,19 +153,19 @@ dependencies {
     }
 
     // RNFirebase required dependencies
-    compile "com.google.firebase:firebase-core:11.6.2"
-    compile "com.google.android.gms:play-services-base:11.6.2"
+    compile "com.google.firebase:firebase-core:11.8.0"
+    compile "com.google.android.gms:play-services-base:11.8.0"
 
     // RNFirebase optional dependencies
-    compile "com.google.firebase:firebase-ads:11.6.2"
-    compile "com.google.firebase:firebase-auth:11.6.2"
-    compile "com.google.firebase:firebase-config:11.6.2"
-    compile "com.google.firebase:firebase-crash:11.6.2"
-    compile "com.google.firebase:firebase-database:11.6.2"
-    compile "com.google.firebase:firebase-firestore:11.6.2"
-    compile "com.google.firebase:firebase-messaging:11.6.2"
-    compile "com.google.firebase:firebase-perf:11.6.2"
-    compile "com.google.firebase:firebase-storage:11.6.2"
+    compile "com.google.firebase:firebase-ads:11.8.0"
+    compile "com.google.firebase:firebase-auth:11.8.0"
+    compile "com.google.firebase:firebase-config:11.8.0"
+    compile "com.google.firebase:firebase-crash:11.8.0"
+    compile "com.google.firebase:firebase-database:11.8.0"
+    compile "com.google.firebase:firebase-firestore:11.8.0"
+    compile "com.google.firebase:firebase-messaging:11.8.0"
+    compile "com.google.firebase:firebase-perf:11.8.0"
+    compile "com.google.firebase:firebase-storage:11.8.0"
     
     compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
         transitive = true
