@@ -6,6 +6,7 @@ const BASE_DIRECTORY = './';
 const DEFAULT_COMPANY_NAME = 'invertase';
 const DEFAULT_PACKAGE_NAME = 'com.invertase.rnfirebasestarter';
 const DEFAULT_PROJECT_NAME = 'RNFirebaseStarter';
+const VALID_CHARACTERS = /^[a-zA-Z\s]+$/;
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -96,6 +97,7 @@ const renameProjectFiles = (name) => {
     console.log('---------------------------------------');
     return new Promise((resolve, reject) => {
         renameFiles(BASE_DIRECTORY, DEFAULT_PROJECT_NAME, name);
+        renameFiles(BASE_DIRECTORY, DEFAULT_PROJECT_NAME.toLowerCase(), name.toLowerCase());
         console.log('---------------------------------------');
         console.log('Finished renaming project files');
         console.log('---------------------------------------');
@@ -122,14 +124,20 @@ const run = async () => {
     console.log('---------------------------------------------------------');
     let projectName = await readInput('Project name, e.g. My Amazing Project');
     console.log('---------------------------------------------------------');
-    if (!projectName || projectName === '') {
-        throw new Error('ERROR: Please supply a valid project name');
+    if (!projectName || projectName === '' || projectName.trim() === '') {
+        throw new Error('ERROR: Please supply a project name');
+    }
+    if (!projectName.match(VALID_CHARACTERS)) {
+        throw new Error('ERROR: The project name must only contain letters or spaces');
     }
     
     let companyName = await readInput('Company name, e.g. My Company');
     console.log('---------------------------------------------------------');
-    if (!companyName || companyName === '') {
-        throw new Error('ERROR: Please supply a valid company name');
+    if (!companyName || companyName === '' || companyName.trim() === '') {
+        throw new Error('ERROR: Please supply a company name');
+    }
+    if (!companyName.match(VALID_CHARACTERS)) {
+        throw new Error('ERROR: The company name must only contain letters or spaces');
     }
     
     projectName = projectName.replace(/ /g, '');
