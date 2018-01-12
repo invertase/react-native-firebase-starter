@@ -41,6 +41,7 @@ export default class App extends React.Component {
           {firebase.admob.nativeModuleExists && <Text style={styles.module}>Admob</Text>}
           {firebase.analytics.nativeModuleExists && <Text style={styles.module}>Analytics</Text>}
           {firebase.auth.nativeModuleExists && <Text style={styles.module}>Authentication</Text>}
+          {firebase.fabric.crashlytics.nativeModuleExists && <Text style={styles.module}>Crashlytics</Text>}
           {firebase.crash.nativeModuleExists && <Text style={styles.module}>Crash Reporting</Text>}
           {firebase.firestore.nativeModuleExists && <Text style={styles.module}>Cloud Firestore</Text>}
           {firebase.messaging.nativeModuleExists && <Text style={styles.module}>Messaging</Text>}

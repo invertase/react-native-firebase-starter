@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply plugin: "io.fabric"
 
 import com.android.build.OutputFile
 
@@ -152,19 +153,23 @@ dependencies {
     }
 
     // RNFirebase required dependencies
-    compile "com.google.firebase:firebase-core:11.6.0"
-    compile "com.google.android.gms:play-services-base:11.6.0"
+    compile "com.google.firebase:firebase-core:11.6.2"
+    compile "com.google.android.gms:play-services-base:11.6.2"
 
     // RNFirebase optional dependencies
-    compile "com.google.firebase:firebase-ads:11.6.0"
-    compile "com.google.firebase:firebase-auth:11.6.0"
-    compile "com.google.firebase:firebase-config:11.6.0"
-    compile "com.google.firebase:firebase-crash:11.6.0"
-    compile "com.google.firebase:firebase-database:11.6.0"
-    compile "com.google.firebase:firebase-firestore:11.6.0"
-    compile "com.google.firebase:firebase-messaging:11.6.0"
-    compile "com.google.firebase:firebase-perf:11.6.0"
-    compile "com.google.firebase:firebase-storage:11.6.0"
+    compile "com.google.firebase:firebase-ads:11.6.2"
+    compile "com.google.firebase:firebase-auth:11.6.2"
+    compile "com.google.firebase:firebase-config:11.6.2"
+    compile "com.google.firebase:firebase-crash:11.6.2"
+    compile "com.google.firebase:firebase-database:11.6.2"
+    compile "com.google.firebase:firebase-firestore:11.6.2"
+    compile "com.google.firebase:firebase-messaging:11.6.2"
+    compile "com.google.firebase:firebase-perf:11.6.2"
+    compile "com.google.firebase:firebase-storage:11.6.2"
+    
+    compile('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
 
     compile fileTree(dir: "libs", include: ["*.jar"])
     compile "com.android.support:appcompat-v7:23.0.1"
