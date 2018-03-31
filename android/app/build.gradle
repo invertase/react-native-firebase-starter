@@ -160,6 +160,7 @@ dependencies {
     implementation "com.google.firebase:firebase-auth:12.0.1"
     implementation "com.google.firebase:firebase-config:12.0.1"
     implementation "com.google.firebase:firebase-database:12.0.1"
+    implementation "com.google.firebase:firebase-invites:12.0.1"
     implementation "com.google.firebase:firebase-firestore:12.0.1"
     implementation "com.google.firebase:firebase-messaging:12.0.1"
     implementation "com.google.firebase:firebase-perf:12.0.1"

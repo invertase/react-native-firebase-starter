@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, Platform, Image, Text, View } from 'react-native';
+import { StyleSheet, Platform, Image, Text, View, ScrollView } from 'react-native';
 
 import firebase from 'react-native-firebase';
 
@@ -17,8 +17,9 @@ export default class App extends React.Component {
 
   render() {
     return (
-      <View style={styles.container}>
-        <Image source={require('./assets/RNFirebase512x512.png')} style={[styles.logo]} />
+      <ScrollView>
+        <View style={styles.container}>
+        <Image source={require('./assets/RNFirebase.png')} style={[styles.logo]} />
         <Text style={styles.welcome}>
           Welcome to the React Native{'\n'}Firebase starter project!
         </Text>
@@ -52,7 +53,8 @@ export default class App extends React.Component {
           {firebase.config.nativeModuleExists && <Text style={styles.module}>Remote Config</Text>}
           {firebase.storage.nativeModuleExists && <Text style={styles.module}>Storage</Text>}
         </View>
-      </View>
+        </View>    
+      </ScrollView>
     );
   }
 }
@@ -67,6 +69,7 @@ const styles = StyleSheet.create({
   logo: {
     height: 80,
     marginBottom: 16,
+    marginTop: 32,
     width: 80,
   },
   welcome: {
