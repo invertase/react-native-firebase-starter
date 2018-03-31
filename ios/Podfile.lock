@@ -5,8 +5,8 @@ PODS:
   - BoringSSL/Implementation (10.0):
     - BoringSSL/Interface (= 10.0)
   - BoringSSL/Interface (10.0)
-  - Crashlytics (3.9.3):
-    - Fabric (~> 1.7.2)
+  - Crashlytics (3.10.1):
+    - Fabric (~> 1.7.5)
   - Fabric (1.7.6)
   - Firebase/AdMob (4.11.0):
     - Firebase/Core
@@ -17,9 +17,6 @@ PODS:
   - Firebase/Core (4.11.0):
     - FirebaseAnalytics (= 4.1.0)
     - FirebaseCore (= 4.0.18)
-  - Firebase/Crash (4.11.0):
-    - Firebase/Core
-    - FirebaseCrash (= 2.0.2)
   - Firebase/Database (4.11.0):
     - Firebase/Core
     - FirebaseDatabase (= 4.1.5)
@@ -55,12 +52,6 @@ PODS:
     - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseCore (4.0.18):
     - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-  - FirebaseCrash (2.0.2):
-    - FirebaseAnalytics (~> 4.0)
-    - FirebaseInstanceID (~> 2.0)
-    - GoogleToolboxForMac/Logger (~> 2.1)
-    - GoogleToolboxForMac/NSData+zlib (~> 2.1)
-    - Protobuf (~> 3.1)
   - FirebaseDatabase (4.1.5):
     - FirebaseAnalytics (~> 4.1)
     - FirebaseCore (~> 4.0)
@@ -143,12 +134,11 @@ PODS:
   - Protobuf (3.5.0)
 
 DEPENDENCIES:
-  - Crashlytics (~> 3.9.3)
-  - Fabric (~> 1.7.2)
+  - Crashlytics (~> 3.10.1)
+  - Fabric (~> 1.7.6)
   - Firebase/AdMob
   - Firebase/Auth
   - Firebase/Core
-  - Firebase/Crash
   - Firebase/Database
   - Firebase/DynamicLinks
   - Firebase/Firestore
@@ -159,14 +149,13 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   BoringSSL: 32764dbaf5f5888cf51fbaa172a010126b41bcd4
-  Crashlytics: dbb07d01876c171c5ccbdf7826410380189e452c
+  Crashlytics: aee1a064cbbf99b32efa3f056a5f458d846bc8ff
   Fabric: f8d42c893bb187326a7968b62abe55c36a987a46
   Firebase: cc13dfab1038c8b45d7903e01fc690451d6d0b24
   FirebaseABTesting: d07d0ee833b842d5153549e4c7e2e2cb1c23a3f9
   FirebaseAnalytics: 3dfae28d4a5e06f86c4fae830efc2ad3fadb19bc
   FirebaseAuth: 147bf340a0706b44ca1753d6b41ebafd9687cfe6
   FirebaseCore: b981f47e5254cbcfdeb483355300d743f6fcab2c
-  FirebaseCrash: cded0fc566c03651aea606a101bc156085f333ca
   FirebaseDatabase: 5f0bc6134c5c237cf55f9e1249d406770a75eafd
   FirebaseDynamicLinks: 38b68641d24e78d0277a9205d988ce22875d5a25
   FirebaseFirestore: 796df79c29cf8ecf806564f4d347665bdafa6ef0
@@ -187,6 +176,6 @@ SPEC CHECKSUMS:
   nanopb: 5601e6bca2dbf1ed831b519092ec110f66982ca3
   Protobuf: 8a9838fba8dae3389230e1b7f8c104aa32389c03
 
-PODFILE CHECKSUM: d2ec5676da425a2da805526b1b72d5de1ee92a61
+PODFILE CHECKSUM: 1371cc042ab01135103be9c2c2c5204ee2a8b0e4
 
 COCOAPODS: 1.4.0

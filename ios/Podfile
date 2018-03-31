@@ -13,7 +13,6 @@ target 'RNFirebaseStarter' do
   # [OPTIONAL PODS] - comment out pods for firebase products you won't be using.
   pod 'Firebase/AdMob'
   pod 'Firebase/Auth'
-  pod 'Firebase/Crash'
   pod 'Firebase/Database'
   pod 'Firebase/DynamicLinks'
   pod 'Firebase/Performance'
@@ -22,6 +21,6 @@ target 'RNFirebaseStarter' do
   pod 'Firebase/RemoteConfig'
   pod 'Firebase/Storage'
   
-  pod 'Fabric', '~> 1.7.2'
-  pod 'Crashlytics', '~> 3.9.3'
+  pod 'Fabric', '~> 1.7.6'
+  pod 'Crashlytics', '~> 3.10.1'
 end

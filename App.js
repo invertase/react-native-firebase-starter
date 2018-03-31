@@ -42,9 +42,11 @@ export default class App extends React.Component {
           {firebase.analytics.nativeModuleExists && <Text style={styles.module}>Analytics</Text>}
           {firebase.auth.nativeModuleExists && <Text style={styles.module}>Authentication</Text>}
           {firebase.fabric.crashlytics.nativeModuleExists && <Text style={styles.module}>Crashlytics</Text>}
-          {firebase.crash.nativeModuleExists && <Text style={styles.module}>Crash Reporting</Text>}
           {firebase.firestore.nativeModuleExists && <Text style={styles.module}>Cloud Firestore</Text>}
-          {firebase.messaging.nativeModuleExists && <Text style={styles.module}>Messaging</Text>}
+          {firebase.messaging.nativeModuleExists && <Text style={styles.module}>Cloud Messaging</Text>}
+          {firebase.links.nativeModuleExists && <Text style={styles.module}>Dynamic Links</Text>}
+          {firebase.iid.nativeModuleExists && <Text style={styles.module}>Instance ID</Text>}
+          {firebase.notifications.nativeModuleExists && <Text style={styles.module}>Notifications</Text>}
           {firebase.perf.nativeModuleExists && <Text style={styles.module}>Performance Monitoring</Text>}
           {firebase.database.nativeModuleExists && <Text style={styles.module}>Realtime Database</Text>}
           {firebase.config.nativeModuleExists && <Text style={styles.module}>Remote Config</Text>}
