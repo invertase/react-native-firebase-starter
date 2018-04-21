@@ -16,7 +16,7 @@ A basic react native app with [`react-native-firebase`](https://github.com/inver
 
 ### Getting Started
 
-If you're only developing for one platform you can ignore the steps below that are tagged with the platform you don't require.
+> If you're only developing for one platform you can ignore the steps below that are tagged with the platform you don't require.
 
 #### 1) Clone & Install Dependencies
 
