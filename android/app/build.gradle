@@ -152,19 +152,19 @@ dependencies {
     }
 
     // RNFirebase required dependencies
-    implementation "com.google.firebase:firebase-core:12.0.1"
-    implementation "com.google.android.gms:play-services-base:12.0.1"
+    implementation "com.google.firebase:firebase-core:15.0.0"
+    implementation "com.google.android.gms:play-services-base:15.0.0"
 
     // RNFirebase optional dependencies
-    implementation "com.google.firebase:firebase-ads:12.0.1"
-    implementation "com.google.firebase:firebase-auth:12.0.1"
-    implementation "com.google.firebase:firebase-config:12.0.1"
-    implementation "com.google.firebase:firebase-database:12.0.1"
-    implementation "com.google.firebase:firebase-invites:12.0.1"
-    implementation "com.google.firebase:firebase-firestore:12.0.1"
-    implementation "com.google.firebase:firebase-messaging:12.0.1"
-    implementation "com.google.firebase:firebase-perf:12.0.1"
-    implementation "com.google.firebase:firebase-storage:12.0.1"
+    implementation "com.google.firebase:firebase-ads:15.0.0"
+    implementation "com.google.firebase:firebase-auth:15.0.0"
+    implementation "com.google.firebase:firebase-config:15.0.0"
+    implementation "com.google.firebase:firebase-database:15.0.0"
+    implementation "com.google.firebase:firebase-invites:15.0.0"
+    implementation "com.google.firebase:firebase-firestore:15.0.0"
+    implementation "com.google.firebase:firebase-messaging:15.0.0"
+    implementation "com.google.firebase:firebase-perf:15.0.0"
+    implementation "com.google.firebase:firebase-storage:15.0.0"
     
     implementation('com.crashlytics.sdk.android:crashlytics:2.9.1@aar') {
         transitive = true
