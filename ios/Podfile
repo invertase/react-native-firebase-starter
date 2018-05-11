@@ -8,7 +8,7 @@ target 'RNFirebaseStarter' do
   # Pods for RNFirebaseStarter
 
   # Required by RNFirebase
-  pod 'Firebase/Core'
+  pod 'Firebase/Core', '~> 4.13.0'
 
   # [OPTIONAL PODS] - comment out pods for firebase products you won't be using.
   pod 'Firebase/AdMob'

@@ -161,7 +161,7 @@ dependencies {
     implementation "com.google.firebase:firebase-config:15.0.0"
     implementation "com.google.firebase:firebase-database:15.0.0"
     implementation "com.google.firebase:firebase-invites:15.0.1"
-    implementation "com.google.firebase:firebase-firestore:15.0.0"
+    implementation "com.google.firebase:firebase-firestore:16.0.0"
     implementation "com.google.firebase:firebase-messaging:15.0.2"
     implementation "com.google.firebase:firebase-perf:15.1.0"
     implementation "com.google.firebase:firebase-storage:15.0.2"
