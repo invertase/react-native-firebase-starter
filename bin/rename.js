@@ -152,13 +152,15 @@ const run = async () => {
 
     projectName = projectName.replace(/ /g, '');
     companyName = companyName.replace(/ /g, '').toLowerCase();
-    domainExt = companyName.toLowerCase().split('.')[1]
-    domainName = companyName.toLowerCase().split('.')[0]
+    domainExt = companyDomain.toLowerCase().split('.')[1]
+    domainName = companyDomain.toLowerCase().split('.')[0]
+
+    console.log
 
     const packageName = `${domainExt}.${domainName}.${projectName.toLowerCase()}`;
     // Close the input
     rl.close();
-    
+
     updateProjectName(projectName)
         .then(() => updatePackageName(packageName))
         .then(() => renameProjectFiles(projectName))
