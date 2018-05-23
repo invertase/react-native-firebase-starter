@@ -7,6 +7,7 @@ const DEFAULT_COMPANY_NAME = 'invertase';
 const DEFAULT_PACKAGE_NAME = 'com.invertase.rnfirebasestarter';
 const DEFAULT_PROJECT_NAME = 'RNFirebaseStarter';
 const VALID_CHARACTERS = /^[a-zA-Z\s]+$/;
+const VALID_DOMAIN = /^[a-zA-Z0-9][a-zA-Z0-9-]{1,61}[a-zA-Z0-9]\.[a-zA-Z]{2,}$/;
 
 const rl = readline.createInterface({
     input: process.stdin,
@@ -130,7 +131,7 @@ const run = async () => {
     if (!projectName.match(VALID_CHARACTERS)) {
         throw new Error('ERROR: The project name must only contain letters or spaces');
     }
-    
+
     let companyName = await readInput('Company name, e.g. My Company');
     console.log('---------------------------------------------------------');
     if (!companyName || companyName === '' || companyName.trim() === '') {
@@ -139,11 +140,22 @@ const run = async () => {
     if (!companyName.match(VALID_CHARACTERS)) {
         throw new Error('ERROR: The company name must only contain letters or spaces');
     }
-    
+
+    let companyDomain = await readInput('Company Domain, e.g. company.com');
+    console.log('---------------------------------------------------------');
+    if (!companyDomain || companyDomain === '' || companyDomain.trim() === '') {
+        throw new Error('ERROR: Please supply a company URL');
+    }
+    if (!companyDomain.match(VALID_DOMAIN)) {
+        throw new Error('ERROR: Invalid company domain, does not follow format: [domain name].[domain extension]');
+    }
+
     projectName = projectName.replace(/ /g, '');
     companyName = companyName.replace(/ /g, '').toLowerCase();
-    
-    const packageName = `com.${companyName}.${projectName.toLowerCase()}`;
+    domainExt = companyName.toLowerCase().split('.')[1]
+    domainName = companyName.toLowerCase().split('.')[0]
+
+    const packageName = `${domainExt}.${domainName}.${projectName.toLowerCase()}`;
     // Close the input
     rl.close();
     
