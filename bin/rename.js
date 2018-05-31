@@ -120,34 +120,45 @@ const renameCompanyFiles = (name) => {
     })
 }
 
-const run = async () => {
+const run = () => {
+    let projectName;
+    let companyName;
+    let packageName;
+
     console.log('---------------------------------------------------------');
-    let projectName = await readInput('Project name, e.g. My Amazing Project');
-    console.log('---------------------------------------------------------');
-    if (!projectName || projectName === '' || projectName.trim() === '') {
-        throw new Error('ERROR: Please supply a project name');
-    }
-    if (!projectName.match(VALID_CHARACTERS)) {
-        throw new Error('ERROR: The project name must only contain letters or spaces');
-    }
-    
-    let companyName = await readInput('Company name, e.g. My Company');
-    console.log('---------------------------------------------------------');
-    if (!companyName || companyName === '' || companyName.trim() === '') {
-        throw new Error('ERROR: Please supply a company name');
-    }
-    if (!companyName.match(VALID_CHARACTERS)) {
-        throw new Error('ERROR: The company name must only contain letters or spaces');
-    }
-    
-    projectName = projectName.replace(/ /g, '');
-    companyName = companyName.replace(/ /g, '').toLowerCase();
-    
-    const packageName = `com.${companyName}.${projectName.toLowerCase()}`;
-    // Close the input
-    rl.close();
-    
-    updateProjectName(projectName)
+
+    return Promise.resolve()
+        .then(() => readInput('Project name, e.g. My Amazing Project'))
+        .then((input) => {
+            projectName = input;
+            console.log('---------------------------------------------------------');
+            if (!projectName || projectName === '' || projectName.trim() === '') {
+                throw new Error('ERROR: Please supply a project name');
+            }
+            if (!projectName.match(VALID_CHARACTERS)) {
+                throw new Error('ERROR: The project name must only contain letters or spaces');
+            }
+        })
+        .then(() => readInput('Company name, e.g. My Company'))
+        .then((input) => {
+            companyName = input;
+            console.log('---------------------------------------------------------');
+            if (!companyName || companyName === '' || companyName.trim() === '') {
+                throw new Error('ERROR: Please supply a company name');
+            }
+            if (!companyName.match(VALID_CHARACTERS)) {
+                throw new Error('ERROR: The company name must only contain letters or spaces');
+            }
+        })
+        .then(() => {
+            projectName = projectName.replace(/ /g, '');
+            companyName = companyName.replace(/ /g, '').toLowerCase();
+
+            packageName = `com.${companyName}.${projectName.toLowerCase()}`;
+            // Close the input
+            rl.close();
+        })
+        .then(() => updateProjectName(projectName))
         .then(() => updatePackageName(packageName))
         .then(() => renameProjectFiles(projectName))
         .then(() => renameCompanyFiles(companyName))
