@@ -19,41 +19,43 @@ export default class App extends React.Component {
     return (
       <ScrollView>
         <View style={styles.container}>
-        <Image source={require('./assets/RNFirebase.png')} style={[styles.logo]} />
-        <Text style={styles.welcome}>
-          Welcome to the React Native{'\n'}Firebase starter project!
-        </Text>
-        <Text style={styles.instructions}>
-          To get started, edit App.js
-        </Text>
-        {Platform.OS === 'ios' ? (
-          <Text style={styles.instructions}>
-            Press Cmd+R to reload,{'\n'}
-            Cmd+D or shake for dev menu
+          <Image source={require('./assets/RNFirebase.png')} style={[styles.logo]}/>
+          <Text style={styles.welcome}>
+            Welcome to {'\n'} React Native Firebase
           </Text>
-        ) : (
           <Text style={styles.instructions}>
-            Double tap R on your keyboard to reload,{'\n'}
-            Cmd+M or shake for dev menu
+            To get started, edit App.js
           </Text>
-        )}
-        <View style={styles.modules}>
-          <Text style={styles.modulesHeader}>The following Firebase modules are enabled:</Text>
-          {firebase.admob.nativeModuleExists && <Text style={styles.module}>Admob</Text>}
-          {firebase.analytics.nativeModuleExists && <Text style={styles.module}>Analytics</Text>}
-          {firebase.auth.nativeModuleExists && <Text style={styles.module}>Authentication</Text>}
-          {firebase.crashlytics.nativeModuleExists && <Text style={styles.module}>Crashlytics</Text>}
-          {firebase.firestore.nativeModuleExists && <Text style={styles.module}>Cloud Firestore</Text>}
-          {firebase.messaging.nativeModuleExists && <Text style={styles.module}>Cloud Messaging</Text>}
-          {firebase.links.nativeModuleExists && <Text style={styles.module}>Dynamic Links</Text>}
-          {firebase.iid.nativeModuleExists && <Text style={styles.module}>Instance ID</Text>}
-          {firebase.notifications.nativeModuleExists && <Text style={styles.module}>Notifications</Text>}
-          {firebase.perf.nativeModuleExists && <Text style={styles.module}>Performance Monitoring</Text>}
-          {firebase.database.nativeModuleExists && <Text style={styles.module}>Realtime Database</Text>}
-          {firebase.config.nativeModuleExists && <Text style={styles.module}>Remote Config</Text>}
-          {firebase.storage.nativeModuleExists && <Text style={styles.module}>Storage</Text>}
+          {Platform.OS === 'ios' ? (
+            <Text style={styles.instructions}>
+              Press Cmd+R to reload,{'\n'}
+              Cmd+D or shake for dev menu
+            </Text>
+          ) : (
+            <Text style={styles.instructions}>
+              Double tap R on your keyboard to reload,{'\n'}
+              Cmd+M or shake for dev menu
+            </Text>
+          )}
+          <View style={styles.modules}>
+            <Text style={styles.modulesHeader}>The following Firebase modules are pre-installed:</Text>
+            {firebase.admob.nativeModuleExists && <Text style={styles.module}>admob()</Text>}
+            {firebase.analytics.nativeModuleExists && <Text style={styles.module}>analytics()</Text>}
+            {firebase.auth.nativeModuleExists && <Text style={styles.module}>auth()</Text>}
+            {firebase.config.nativeModuleExists && <Text style={styles.module}>config()</Text>}
+            {firebase.crashlytics.nativeModuleExists && <Text style={styles.module}>crashlytics()</Text>}
+            {firebase.database.nativeModuleExists && <Text style={styles.module}>database()</Text>}
+            {firebase.firestore.nativeModuleExists && <Text style={styles.module}>firestore()</Text>}
+            {firebase.functions.nativeModuleExists && <Text style={styles.module}>functions()</Text>}
+            {firebase.iid.nativeModuleExists && <Text style={styles.module}>iid()</Text>}
+            {firebase.invites.nativeModuleExists && <Text style={styles.module}>invites()</Text>}
+            {firebase.links.nativeModuleExists && <Text style={styles.module}>links()</Text>}
+            {firebase.messaging.nativeModuleExists && <Text style={styles.module}>messaging()</Text>}
+            {firebase.notifications.nativeModuleExists && <Text style={styles.module}>notifications()</Text>}
+            {firebase.perf.nativeModuleExists && <Text style={styles.module}>perf()</Text>}
+            {firebase.storage.nativeModuleExists && <Text style={styles.module}>storage()</Text>}
+          </View>
         </View>
-        </View>    
       </ScrollView>
     );
   }
@@ -67,10 +69,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
   logo: {
-    height: 80,
+    height: 120,
     marginBottom: 16,
     marginTop: 32,
-    width: 80,
+    width: 120,
   },
   welcome: {
     fontSize: 20,
