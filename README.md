@@ -39,7 +39,7 @@ A basic react native app with [`react-native-firebase`](https://github.com/inver
 - 3.1) **[iOS]** Follow the `add firebase to your app` instructions [here](https://firebase.google.com/docs/ios/setup#add_firebase_to_your_app) to generate your `GoogleService-Info.plist` file if you haven't done so already - use the package name generated previously as your `iOS bundle ID`.
 - 3.2) **[iOS]** Place this file in the `ios/` directory of your project.
 - 3.3) **[Android]** Follow the `manually add firebase` to your app instructions [here](https://firebase.google.com/docs/android/setup#manually_add_firebase) to generate your `google-services.json` file if you haven't done so already - use the package name generated previously as your `Android package name`.
-- 3.4) Place this file in the `android/app/` directory of your project.
+- 3.4) **[Android]** Place this file in the `android/app/` directory of your project.
   
 #### 4) Start your app
 
