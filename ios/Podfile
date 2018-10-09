@@ -22,7 +22,7 @@ target 'RNFirebaseStarter' do
   pod 'Firebase/RemoteConfig', '~> 5.9.0'
   pod 'Firebase/Storage', '~> 5.9.0'
   pod 'Firebase/Performance', '~> 5.9.0'
-  pod 'Fabric', '~> 1.7.11'
-  pod 'Crashlytics', '~> 3.10.7'
+  pod 'Fabric', '~> 1.7.13'
+  pod 'Crashlytics', '~> 3.10.9'
 
 end
