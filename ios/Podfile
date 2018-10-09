@@ -17,7 +17,7 @@ target 'RNFirebaseStarter' do
   pod 'Firebase/Functions', '~> 5.9.0'
   pod 'Firebase/DynamicLinks', '~> 5.9.0'
   pod 'Firebase/Firestore', '~> 5.9.0'
-  pod 'Firebase/Invites', '~> 5.9.0'
+  # pod 'Firebase/Invites', '~> 5.9.0'
   pod 'Firebase/Messaging', '~> 5.9.0'
   pod 'Firebase/RemoteConfig', '~> 5.9.0'
   pod 'Firebase/Storage', '~> 5.9.0'
