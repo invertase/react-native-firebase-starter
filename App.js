@@ -6,20 +6,22 @@ import firebase from 'react-native-firebase';
 export default class App extends React.Component {
   constructor() {
     super();
-    this.state = {
-      // firebase things?
-    };
+    this.state = {};
   }
 
-  componentDidMount() {
-    // firebase things?
+  async componentDidMount() {
+    // TODO: You: Do firebase things
+    // const { user } = await firebase.auth().signInAnonymously();
+    // console.warn('User -> ', user.toJSON());
+
+    // await firebase.analytics().logEvent('foo', { bar: '123'});
   }
 
   render() {
     return (
       <ScrollView>
         <View style={styles.container}>
-          <Image source={require('./assets/RNFirebase.png')} style={[styles.logo]}/>
+          <Image source={require('./assets/ReactNativeFirebase.png')} style={[styles.logo]}/>
           <Text style={styles.welcome}>
             Welcome to {'\n'} React Native Firebase
           </Text>
@@ -71,8 +73,9 @@ const styles = StyleSheet.create({
   logo: {
     height: 120,
     marginBottom: 16,
-    marginTop: 32,
-    width: 120,
+    marginTop: 64,
+    padding: 10,
+    width: 135,
   },
   welcome: {
     fontSize: 20,
