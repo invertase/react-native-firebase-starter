@@ -1,6 +1,6 @@
 {
   "name": "RNFirebaseStarter",
-  "version": "0.1.0",
+  "version": "5.1.0",
   "private": true,
   "devDependencies": {
     "babel-jest": "23.6.0",
@@ -24,6 +24,6 @@
   "dependencies": {
     "react": "16.5.0",
     "react-native": "0.57.1",
-    "react-native-firebase": "^5.0.0"
+    "react-native-firebase": "^5.1.0"
   }
 }
