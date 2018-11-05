@@ -1,6 +1,6 @@
 {
   "name": "RNFirebaseStarter",
-  "version": "0.1.0",
+  "version": "5.1.0",
   "private": true,
   "devDependencies": {
     "babel-jest": "23.6.0",
