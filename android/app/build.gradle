@@ -109,7 +109,7 @@ android {
   buildToolsVersion rootProject.ext.buildToolsVersion
 
   defaultConfig {
-    applicationId "com.invertase.rnfirebasestarter"
+    applicationId "com.company.minigames"
     minSdkVersion rootProject.ext.minSdkVersion
     targetSdkVersion rootProject.ext.targetSdkVersion
     versionCode 1

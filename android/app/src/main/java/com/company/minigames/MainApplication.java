@@ -1,4 +1,4 @@
-package com.invertase.rnfirebasestarter;
+package com.company.minigames;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
