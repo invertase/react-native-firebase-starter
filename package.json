@@ -6,13 +6,13 @@
     "babel-jest": "23.6.0",
     "fs-extra": "^6.0.1",
     "jest": "23.6.0",
-    "metro-react-native-babel-preset": "0.48.0",
-    "react-test-renderer": "16.5.0",
-    "replace-in-file": "^3.4.0"
+    "metro-react-native-babel-preset": "0.49.2",
+    "react-test-renderer": "16.7.0",
+    "replace-in-file": "^3.4.2"
   },
   "scripts": {
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
+    "ios": "react-native run-ios --simulator=\"iPhone X\"",
     "apk": "cd android && ./gradlew assembleRelease",
     "rename": "node ./bin/rename.js",
     "start": "react-native start",
@@ -22,8 +22,8 @@
     "preset": "react-native"
   },
   "dependencies": {
-    "react": "16.5.0",
-    "react-native": "0.57.1",
-    "react-native-firebase": "^5.1.1"
+    "react": "16.6.3",
+    "react-native": "0.58.0-rc.2",
+    "react-native-firebase": "^5.2.0"
   }
 }
