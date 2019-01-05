@@ -8,21 +8,21 @@ target 'RNFirebaseStarter' do
   # Pods for RNFirebaseStarter
 
   # Required by RNFirebase
-  pod 'Firebase/Core', '~> 5.11.0'
+  pod 'Firebase/Core', '~> 5.15.0'
 
   # [OPTIONAL PODS] - comment out pods for firebase products you won't be using.
-  pod 'Firebase/AdMob', '~> 5.11.0'
-  pod 'Firebase/Auth', '~> 5.11.0'
-  pod 'Firebase/Core', '~> 5.11.0'
-  pod 'Firebase/Database', '~> 5.11.0'
-  pod 'Firebase/Functions', '~> 5.11.0'
-  pod 'Firebase/DynamicLinks', '~> 5.11.0'
-  pod 'Firebase/Firestore', '~> 5.11.0'
-  # pod 'Firebase/Invites', '~> 5.11.0'
-  pod 'Firebase/Messaging', '~> 5.11.0'
-  pod 'Firebase/RemoteConfig', '~> 5.11.0'
-  pod 'Firebase/Storage', '~> 5.11.0'
-  pod 'Firebase/Performance', '~> 5.11.0'
+  pod 'Firebase/AdMob', '~> 5.15.0'
+  pod 'Firebase/Auth', '~> 5.15.0'
+  pod 'Firebase/Core', '~> 5.15.0'
+  pod 'Firebase/Database', '~> 5.15.0'
+  pod 'Firebase/Functions', '~> 5.15.0'
+  pod 'Firebase/DynamicLinks', '~> 5.15.0'
+  pod 'Firebase/Firestore', '~> 5.15.0'
+  # pod 'Firebase/Invites', '~> 5.15.0'
+  pod 'Firebase/Messaging', '~> 5.15.0'
+  pod 'Firebase/RemoteConfig', '~> 5.15.0'
+  pod 'Firebase/Storage', '~> 5.15.0'
+  pod 'Firebase/Performance', '~> 5.15.0'
   pod 'Fabric', '~> 1.7.13'
   pod 'Crashlytics', '~> 3.10.9'
 
