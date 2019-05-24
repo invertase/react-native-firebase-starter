@@ -111,7 +111,7 @@ android {
         versionCode 1
         versionName "1.0"
 
-        // Needed until API21, though release builds may shrink sufficiently
+        // Needed to support API<21, though there is a small chance proguard shrinks things sufficiently
         multiDexEnabled true
     }
     splits {
@@ -200,7 +200,7 @@ dependencies {
     *  OPTIONAL SUPPORT LIBS
     * -------------------------------- */
 
-    // Needed until API21, though release builds may shrink sufficiently
+    // Needed to support API<21, though there is a small chance proguard shrinks things sufficiently
     implementation "com.android.support:multidex:1.0.3"
 
     // For Firebase Ads
