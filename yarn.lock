@@ -4923,10 +4923,10 @@ react-is@^16.8.1, react-is@^16.8.3, react-is@^16.8.4:
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
 
-react-native-firebase@^5.3.1:
-  version "5.3.1"
-  resolved "https://registry.yarnpkg.com/react-native-firebase/-/react-native-firebase-5.3.1.tgz#cfd295f562249f6fcf5e3fb2c62894575ece2c7f"
-  integrity sha512-eOuSqIl+DZPNmN5ivSLgkEcsl5m0sXxttoPBn3bOHfI+apEd4I8F+9fcbHerUFUvLzesXmHR9locjhR6IJ+q3w==
+react-native-firebase@^5.4.0:
+  version "5.4.0"
+  resolved "https://registry.yarnpkg.com/react-native-firebase/-/react-native-firebase-5.4.0.tgz#64ee3a601fd421a931db0d81d6df1ea639997f95"
+  integrity sha512-LHbyCC9F7JfXNq5UpDNAP2rzjEYI6O/zNCy1MEEVr12ICPMeg6wwz2JMeqLwZdYLZQgaD/dk4jWZ8KxUbqdPnQ==
   dependencies:
     opencollective-postinstall "^2.0.0"
     prop-types "^15.6.2"

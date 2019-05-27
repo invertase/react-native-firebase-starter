@@ -14,7 +14,7 @@
   "dependencies": {
     "react": "16.8.3",
     "react-native": "0.59.3",
-    "react-native-firebase": "^5.3.1"
+    "react-native-firebase": "^5.4.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
