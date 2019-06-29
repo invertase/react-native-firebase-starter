@@ -12,7 +12,6 @@ target 'RNFirebaseStarter' do
   # [OPTIONAL PODS] - comment out pods for firebase products you won't be using.
   # pod 'Firebase/AdMob', '~> 6.3.0'
   pod 'Firebase/Auth', '~> 6.3.0'
-  pod 'Firebase/Core', '~> 6.3.0'
   pod 'Firebase/Database', '~> 6.3.0'
   pod 'Firebase/Functions', '~> 6.3.0'
   pod 'Firebase/DynamicLinks', '~> 6.3.0'
