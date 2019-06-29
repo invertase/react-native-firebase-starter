@@ -3,7 +3,6 @@ apply plugin: "com.google.firebase.firebase-perf"
 apply plugin: 'io.fabric'
 
 import com.android.build.OutputFile
-import com.google.gms.googleservices.GoogleServicesPlugin
 
 /**
  * The react.gradle file registers a task for each build variant (e.g. bundleDebugJsAndAssets
@@ -76,7 +75,10 @@ import com.google.gms.googleservices.GoogleServicesPlugin
  */
 
 project.ext.react = [
-    entryFile: "index.js"
+    entryFile: "index.js",
+
+    // Sometimes (like if you use Android API<17) adb forwards don't work, so you need a bundle in the dev APK
+    bundleInDebug: project.hasProperty("bundleInDebug") ? project.getProperty("bundleInDebug") : false,
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
@@ -174,13 +176,11 @@ dependencies {
     // Analytics
     implementation "com.google.firebase:firebase-analytics:16.5.0"
     // Performance Monitoring
-    implementation "com.google.firebase:firebase-perf:16.2.4"
+    implementation "com.google.firebase:firebase-perf:17.0.0"
     // Remote Config
     implementation "com.google.firebase:firebase-config:17.0.0"
     // Cloud Storage
     implementation "com.google.firebase:firebase-storage:17.0.0"
-    // Invites
-    implementation "com.google.firebase:firebase-invites:17.0.0"
     // Dynamic Links
     implementation "com.google.firebase:firebase-dynamic-links:17.0.0"
     // Real-time Database
@@ -188,11 +188,11 @@ dependencies {
     // Cloud Functions
     implementation "com.google.firebase:firebase-functions:17.0.0"
     // Cloud Firestore
-    implementation "com.google.firebase:firebase-firestore:19.0.0"
+    implementation "com.google.firebase:firebase-firestore:19.0.2"
     // Cloud Messaging / FCM
     implementation "com.google.firebase:firebase-messaging:18.0.0"
     // Crashlytics
-    implementation('com.crashlytics.sdk.android:crashlytics:2.9.5@aar') {
+    implementation('com.crashlytics.sdk.android:crashlytics:2.9.9@aar') {
         transitive = true
     }
 
@@ -208,7 +208,7 @@ dependencies {
     implementation "com.android.support:customtabs:27.1.1"
 
     // For React Native Firebase Notifications
-    implementation 'me.leolin:ShortcutBadger:1.1.21@aar'
+    implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
 }
 
 // Run this once to be able to run the application with BUCK
@@ -219,4 +219,3 @@ task copyDownloadableDepsToLibs(type: Copy) {
 }
 
 apply plugin: 'com.google.gms.google-services'
-GoogleServicesPlugin.config.disableVersionCheck = true
