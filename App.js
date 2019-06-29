@@ -50,7 +50,6 @@ export default class App extends React.Component {
             {firebase.firestore.nativeModuleExists && <Text style={styles.module}>firestore()</Text>}
             {firebase.functions.nativeModuleExists && <Text style={styles.module}>functions()</Text>}
             {firebase.iid.nativeModuleExists && <Text style={styles.module}>iid()</Text>}
-            {firebase.invites.nativeModuleExists && <Text style={styles.module}>invites()</Text>}
             {firebase.links.nativeModuleExists && <Text style={styles.module}>links()</Text>}
             {firebase.messaging.nativeModuleExists && <Text style={styles.module}>messaging()</Text>}
             {firebase.notifications.nativeModuleExists && <Text style={styles.module}>notifications()</Text>}
