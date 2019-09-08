@@ -570,7 +570,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C04F7E60E3774814827066E /* Pods-RNFirebaseStarter-tvOS.debug.xcconfig */;
+			baseConfigurationReference = D8E13BB553BB18534EEFFDDE /* Pods-RNFirebaseStarter.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -600,7 +600,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 7A230A0DEF48DF21D545AA71 /* Pods-RNFirebaseStarter-tvOS.release.xcconfig */;
+			baseConfigurationReference = B2121FE3F0701D7C33F213D3 /* Pods-RNFirebaseStarter.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
