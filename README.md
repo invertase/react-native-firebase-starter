@@ -34,6 +34,7 @@ A basic react native app with [`react-native-firebase`](https://github.com/inver
 #### 3) **[iOS]** Install Pods `RN < 0.60.0`
 
 - 3.1) `cd ios` and run `pod install` - if you don't have CocoaPods you can follow [these instructions](https://guides.cocoapods.org/using/getting-started.html#getting-started) to install it.
+- 3.2) For RN < 0.60.0 Pods are installed by default, however you'll need to update the iOS configuration each time you run `pod install` so that the test file can find RCTLog. More information can be found [here](https://github.com/invertase/react-native-firebase-starter/pull/135#issuecomment-529239319).
 
 #### 4) Add `Google Services` files (plist & JSON)
 
@@ -42,7 +43,7 @@ A basic react native app with [`react-native-firebase`](https://github.com/inver
   - Once added to the directory, add the file to your Xcode project using 'File > Add Files to "[YOUR APP NAME]"…' and selecting the plist file.
 - 4.3) **[Android]** Follow the `manually add firebase` to your app instructions [here](https://firebase.google.com/docs/android/setup#manually_add_firebase) to generate your `google-services.json` file if you haven't done so already - use the package name generated previously as your `Android package name`.
 - 4.4) **[Android]** Place this file in the `android/app/` directory of your project.
-  
+
 #### 5) Start your app
 
 - 5.1) Start the react native packager, run `yarn run start` or `npm start` from the root of your project.
@@ -50,7 +51,7 @@ A basic react native app with [`react-native-firebase`](https://github.com/inver
 - 5.3) **[Android]** If you haven't already got an android device attached/emulator running then you'll need to get one running (make sure the emulator is with Google Play / APIs). When ready run `npm run android` or `yarn run android` from the root of your project.
 
 If all has gone well you'll see an initial screen like the one below.
-  
+
 ## Screenshots
 
 ![preview](https://i.imgur.com/4lG4HuS.png)

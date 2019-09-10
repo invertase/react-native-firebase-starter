@@ -201,46 +201,46 @@ dependencies {
     *    REACT NATIVE FIREBASE
     * ---------------------------- */
 
-    // Library as defined in settings.gradle
-    //implementation project(path: ':react-native-firebase')
+    // Firebase bom setup
+    implementation platform("com.google.firebase:firebase-bom:22.2.0")
 
     // Required dependencies
     //noinspection GradleCompatible
-    implementation "com.google.firebase:firebase-core:17.2.0"
+    implementation "com.google.firebase:firebase-core"
     implementation "com.google.android.gms:play-services-base:17.1.0"
 
     /* -------------------------
     *   OPTIONAL FIREBASE SDKS
     * ------------------------- */
 
-    implementation('com.google.firebase:firebase-ads:18.2.0') {
+    implementation('com.google.firebase:firebase-ads') {
       // exclude `customtabs` as the support lib version is out of date
       // we manually add it as a dependency below with a custom version
       exclude group: 'com.android.support', module: 'customtabs'
     }
 
     // Authentication
-    implementation "com.google.firebase:firebase-auth:19.0.0"
+    implementation "com.google.firebase:firebase-auth"
     // Analytics
-    implementation "com.google.firebase:firebase-analytics:17.2.0"
+    implementation "com.google.firebase:firebase-analytics"
     // Performance Monitoring
-    implementation "com.google.firebase:firebase-perf:19.0.0"
+    implementation "com.google.firebase:firebase-perf"
     // Remote Config
-    implementation "com.google.firebase:firebase-config:19.0.0"
+    implementation "com.google.firebase:firebase-config"
     // Cloud Storage
-    implementation "com.google.firebase:firebase-storage:19.0.0"
+    implementation "com.google.firebase:firebase-storage"
     // Dynamic Links
-    implementation "com.google.firebase:firebase-dynamic-links:19.0.0"
+    implementation "com.google.firebase:firebase-dynamic-links"
     // Real-time Database
-    implementation "com.google.firebase:firebase-database:19.0.0"
+    implementation "com.google.firebase:firebase-database"
     // Cloud Functions
-    implementation "com.google.firebase:firebase-functions:19.0.1"
+    implementation "com.google.firebase:firebase-functions"
     // Cloud Firestore
-    implementation "com.google.firebase:firebase-firestore:21.0.0"
+    implementation "com.google.firebase:firebase-firestore"
     // Cloud Messaging / FCM
-    implementation "com.google.firebase:firebase-messaging:20.0.0"
+    implementation "com.google.firebase:firebase-messaging"
     // Crashlytics
-    implementation('com.crashlytics.sdk.android:crashlytics:2.10.1@aar') {
+    implementation('com.crashlytics.sdk.android:crashlytics@aar') {
         transitive = true
     }
 
