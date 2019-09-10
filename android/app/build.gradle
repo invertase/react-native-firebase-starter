@@ -207,7 +207,6 @@ dependencies {
     // Required dependencies
     //noinspection GradleCompatible
     implementation "com.google.firebase:firebase-core"
-    implementation "com.google.android.gms:play-services-base:17.1.0"
 
     /* -------------------------
     *   OPTIONAL FIREBASE SDKS
