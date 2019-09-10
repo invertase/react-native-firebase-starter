@@ -31,8 +31,6 @@ target 'RNFirebaseStarter' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   # Required by RNFirebase
-  pod 'RNFirebase', path: '../node_modules/react-native-firebase/ios'
-
   pod 'Firebase/Core', '~> 6.8.0'
 
   # [OPTIONAL PODS] - comment out pods for firebase products you won't be using.
@@ -48,6 +46,13 @@ target 'RNFirebaseStarter' do
   pod 'Firebase/Performance', '~> 6.8.0'
   pod 'Fabric', '~> 1.10.2'
   pod 'Crashlytics', '~> 3.13.4'
+
+  target 'RNFirebaseStarterTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  use_native_modules!
 
 end
 

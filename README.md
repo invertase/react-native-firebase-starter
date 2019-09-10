@@ -34,7 +34,6 @@ A basic react native app with [`react-native-firebase`](https://github.com/inver
 #### 3) **[iOS]** Install Pods `RN < 0.60.0`
 
 - 3.1) `cd ios` and run `pod install` - if you don't have CocoaPods you can follow [these instructions](https://guides.cocoapods.org/using/getting-started.html#getting-started) to install it.
-- 3.2) For RN < 0.60.0 Pods are installed by default, however you'll need to update the iOS configuration each time you run `pod install` so that the test file can find RCTLog. More information can be found [here](https://github.com/invertase/react-native-firebase-starter/pull/135#issuecomment-529239319).
 
 #### 4) Add `Google Services` files (plist & JSON)
 
@@ -46,7 +45,7 @@ A basic react native app with [`react-native-firebase`](https://github.com/inver
 
 #### 5) AdMob Setup (Or Removal)
 
-- 5.1) React Native Firebase Starter kit comes with AdMob pre-install. The default Sample AdMob App ID is used in both the info.plist (iOS) and the AndroidManifest.xml (Android) files. If you don't want to use AdMob, just remove it. If you do, be sure to update your ID!
+- 5.1) React Native Firebase Starter kit comes with AdMob pre-install. The default Sample AdMob App ID is used in both the `info.plist` **[iOS]** and the `AndroidManifest.xml` **[Android]** files. If you don't want to use AdMob, just remove it. If you do, be sure to update your ID!
 - 5.2) **[iOS]** Remove or change in `info.plist` by editing the `GADApplicationIdentifier` key string.
 - 5.3) **[Android]** Remove or change in `AndroidManifest.xml` by modifying the content of `<meta-data />` tag within the `<application />` tag.
 - 5.4) More instrucation can be found [here](https://developers.google.com/admob/android/quick-start).

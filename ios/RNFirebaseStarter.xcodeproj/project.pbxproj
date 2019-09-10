@@ -21,6 +21,7 @@
 		2DCD954D1E0B4F2C00145EB5 /* RNFirebaseStarterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* RNFirebaseStarterTests.m */; };
 		66F583A38C047519D1E18159 /* libPods-RNFirebaseStarter.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 599A1087F9C545123EFD61BE /* libPods-RNFirebaseStarter.a */; };
 		ADDA258B0C3DE0261C60A364 /* libPods-RNFirebaseStarter-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 11B23455DE3C4D5673E7318E /* libPods-RNFirebaseStarter-tvOSTests.a */; };
+		CB23C3742761BB2944FDCE0B /* libPods-RNFirebaseStarterTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C3AC53CF282E97E63953C49 /* libPods-RNFirebaseStarterTests.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 		ED2971652150620600B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED2971642150620600B7C4FE /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
@@ -65,7 +66,10 @@
 		599A1087F9C545123EFD61BE /* libPods-RNFirebaseStarter.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNFirebaseStarter.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C04F7E60E3774814827066E /* Pods-RNFirebaseStarter-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFirebaseStarter-tvOS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNFirebaseStarter-tvOS/Pods-RNFirebaseStarter-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7A230A0DEF48DF21D545AA71 /* Pods-RNFirebaseStarter-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFirebaseStarter-tvOS.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNFirebaseStarter-tvOS/Pods-RNFirebaseStarter-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		9C3AC53CF282E97E63953C49 /* libPods-RNFirebaseStarterTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RNFirebaseStarterTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC301B00DE1F70B71BE4D317 /* Pods-RNFirebaseStarterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFirebaseStarterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNFirebaseStarterTests/Pods-RNFirebaseStarterTests.release.xcconfig"; sourceTree = "<group>"; };
 		CA346B7E0D05342E8E702E1C /* Pods-RNFirebaseStarter-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFirebaseStarter-tvOSTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNFirebaseStarter-tvOSTests/Pods-RNFirebaseStarter-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E36E327AAA5B4552B4028263 /* Pods-RNFirebaseStarterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFirebaseStarterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RNFirebaseStarterTests/Pods-RNFirebaseStarterTests.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F2C89EE2F4607D097253AE26 /* Pods-RNFirebaseStarter-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RNFirebaseStarter-tvOSTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RNFirebaseStarter-tvOSTests/Pods-RNFirebaseStarter-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB23C3742761BB2944FDCE0B /* libPods-RNFirebaseStarterTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +140,8 @@
 				F2C89EE2F4607D097253AE26 /* Pods-RNFirebaseStarter-tvOSTests.release.xcconfig */,
 				22D75A04A020FD0E088C0426 /* Pods-RNFirebaseStarter.debug.xcconfig */,
 				0B0D8FD9866DDB3E9D5FE660 /* Pods-RNFirebaseStarter.release.xcconfig */,
+				E36E327AAA5B4552B4028263 /* Pods-RNFirebaseStarterTests.debug.xcconfig */,
+				AC301B00DE1F70B71BE4D317 /* Pods-RNFirebaseStarterTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -170,6 +177,7 @@
 				599A1087F9C545123EFD61BE /* libPods-RNFirebaseStarter.a */,
 				4A114661868ACFA83CCA60B3 /* libPods-RNFirebaseStarter-tvOS.a */,
 				11B23455DE3C4D5673E7318E /* libPods-RNFirebaseStarter-tvOSTests.a */,
+				9C3AC53CF282E97E63953C49 /* libPods-RNFirebaseStarterTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -215,6 +223,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "RNFirebaseStarterTests" */;
 			buildPhases = (
+				4FA1736D7C4B627B721868D5 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
@@ -415,6 +424,28 @@
 			shellPath = /bin/sh;
 			shellScript = "if nc -w 5 -z localhost 8081 ; then\nif ! curl -s \"http://localhost:8081/status\" | grep -q \"packager-status:running\" ; then\necho \"Port 8081 already in use, packager is either not running or not running correctly\"\nexit 2\n\nfi\nelse\nopen \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\nfi\n\n";
 		};
+		4FA1736D7C4B627B721868D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RNFirebaseStarterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		68C8DDEF1FB1D75B5BB1B6BF /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -566,7 +597,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22D75A04A020FD0E088C0426 /* Pods-RNFirebaseStarter.debug.xcconfig */;
+			baseConfigurationReference = E36E327AAA5B4552B4028263 /* Pods-RNFirebaseStarterTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -596,7 +627,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0B0D8FD9866DDB3E9D5FE660 /* Pods-RNFirebaseStarter.release.xcconfig */;
+			baseConfigurationReference = AC301B00DE1F70B71BE4D317 /* Pods-RNFirebaseStarterTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
