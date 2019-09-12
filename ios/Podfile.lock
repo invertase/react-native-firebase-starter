@@ -1,158 +1,184 @@
 PODS:
+  - boost-for-react-native (1.63.0)
   - BoringSSL-GRPC (0.0.3):
     - BoringSSL-GRPC/Implementation (= 0.0.3)
     - BoringSSL-GRPC/Interface (= 0.0.3)
   - BoringSSL-GRPC/Implementation (0.0.3):
     - BoringSSL-GRPC/Interface (= 0.0.3)
   - BoringSSL-GRPC/Interface (0.0.3)
-  - Crashlytics (3.13.2):
+  - Crashlytics (3.13.4):
     - Fabric (~> 1.10.2)
+  - DoubleConversion (1.1.6)
   - Fabric (1.10.2)
-  - Firebase/Auth (6.3.0):
+  - Firebase/Auth (6.8.1):
     - Firebase/CoreOnly
-    - FirebaseAuth (~> 6.1.2)
-  - Firebase/Core (6.3.0):
+    - FirebaseAuth (~> 6.2.3)
+  - Firebase/Core (6.8.1):
     - Firebase/CoreOnly
-    - FirebaseAnalytics (= 6.0.2)
-  - Firebase/CoreOnly (6.3.0):
-    - FirebaseCore (= 6.0.3)
-  - Firebase/Database (6.3.0):
+    - FirebaseAnalytics (= 6.1.1)
+  - Firebase/CoreOnly (6.8.1):
+    - FirebaseCore (= 6.2.3)
+  - Firebase/Database (6.8.1):
     - Firebase/CoreOnly
-    - FirebaseDatabase (~> 6.0.0)
-  - Firebase/DynamicLinks (6.3.0):
+    - FirebaseDatabase (~> 6.1.0)
+  - Firebase/DynamicLinks (6.8.1):
     - Firebase/CoreOnly
-    - FirebaseDynamicLinks (~> 4.0.0)
-  - Firebase/Firestore (6.3.0):
+    - FirebaseDynamicLinks (~> 4.0.5)
+  - Firebase/Firestore (6.8.1):
     - Firebase/CoreOnly
-    - FirebaseFirestore (~> 1.4.0)
-  - Firebase/Functions (6.3.0):
+    - FirebaseFirestore (~> 1.5.0)
+  - Firebase/Functions (6.8.1):
     - Firebase/CoreOnly
     - FirebaseFunctions (~> 2.5.1)
-  - Firebase/Messaging (6.3.0):
+  - Firebase/Messaging (6.8.1):
     - Firebase/CoreOnly
-    - FirebaseMessaging (~> 4.1.0)
-  - Firebase/Performance (6.3.0):
+    - FirebaseMessaging (~> 4.1.4)
+  - Firebase/Performance (6.8.1):
     - Firebase/CoreOnly
-    - FirebasePerformance (~> 3.1.0)
-  - Firebase/RemoteConfig (6.3.0):
+    - FirebasePerformance (~> 3.1.4)
+  - Firebase/RemoteConfig (6.8.1):
     - Firebase/CoreOnly
-    - FirebaseRemoteConfig (~> 4.1.0)
-  - Firebase/Storage (6.3.0):
+    - FirebaseRemoteConfig (~> 4.4.0)
+  - Firebase/Storage (6.8.1):
     - Firebase/CoreOnly
-    - FirebaseStorage (~> 3.2.1)
-  - FirebaseABTesting (3.0.0):
-    - FirebaseCore (~> 6.0)
-    - Protobuf (~> 3.5)
-  - FirebaseAnalytics (6.0.2):
-    - FirebaseCore (~> 6.0)
+    - FirebaseStorage (~> 3.4.1)
+  - FirebaseABTesting (3.1.1):
+    - FirebaseAnalyticsInterop (~> 1.3)
+    - FirebaseCore (~> 6.1)
+    - Protobuf (~> 3.8)
+  - FirebaseAnalytics (6.1.1):
+    - FirebaseCore (~> 6.2)
     - FirebaseInstanceID (~> 4.2)
-    - GoogleAppMeasurement (= 6.0.2)
+    - GoogleAppMeasurement (= 6.1.1)
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
     - GoogleUtilities/Network (~> 6.0)
     - "GoogleUtilities/NSData+zlib (~> 6.0)"
     - nanopb (~> 0.3)
-  - FirebaseAnalyticsInterop (1.2.0)
-  - FirebaseAuth (6.1.2):
+  - FirebaseAnalyticsInterop (1.4.0)
+  - FirebaseAuth (6.2.3):
     - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 6.0)
+    - FirebaseCore (~> 6.2)
     - GoogleUtilities/AppDelegateSwizzler (~> 6.2)
     - GoogleUtilities/Environment (~> 6.2)
     - GTMSessionFetcher/Core (~> 1.1)
   - FirebaseAuthInterop (1.0.0)
-  - FirebaseCore (6.0.3):
-    - GoogleUtilities/Environment (~> 6.0)
-    - GoogleUtilities/Logger (~> 6.0)
-  - FirebaseDatabase (6.0.0):
+  - FirebaseCore (6.2.3):
+    - FirebaseCoreDiagnostics (~> 1.0)
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+  - FirebaseCoreDiagnostics (1.0.1):
+    - FirebaseCoreDiagnosticsInterop (~> 1.0)
+    - GoogleDataTransportCCTSupport (~> 1.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/Logger (~> 6.2)
+  - FirebaseCoreDiagnosticsInterop (1.0.0)
+  - FirebaseDatabase (6.1.0):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 6.0)
     - leveldb-library (~> 1.18)
-  - FirebaseDynamicLinks (4.0.0):
-    - FirebaseAnalyticsInterop (~> 1.0)
-    - FirebaseCore (~> 6.0)
-  - FirebaseFirestore (1.4.0):
+  - FirebaseDynamicLinks (4.0.5):
+    - FirebaseAnalyticsInterop (~> 1.3)
+    - FirebaseCore (~> 6.2)
+  - FirebaseFirestore (1.5.0):
     - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 6.0)
-    - FirebaseFirestore/abseil-cpp (= 1.4.0)
+    - FirebaseCore (~> 6.2)
+    - FirebaseFirestore/abseil-cpp (= 1.5.0)
     - "gRPC-C++ (= 0.0.9)"
-    - leveldb-library (~> 1.20)
+    - leveldb-library (~> 1.22)
     - nanopb (~> 0.3.901)
     - Protobuf (~> 3.1)
-  - FirebaseFirestore/abseil-cpp (1.4.0):
+  - FirebaseFirestore/abseil-cpp (1.5.0):
     - FirebaseAuthInterop (~> 1.0)
-    - FirebaseCore (~> 6.0)
+    - FirebaseCore (~> 6.2)
     - "gRPC-C++ (= 0.0.9)"
-    - leveldb-library (~> 1.20)
+    - leveldb-library (~> 1.22)
     - nanopb (~> 0.3.901)
     - Protobuf (~> 3.1)
   - FirebaseFunctions (2.5.1):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 6.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - FirebaseInstanceID (4.2.0):
+  - FirebaseInstanceID (4.2.5):
     - FirebaseCore (~> 6.0)
     - GoogleUtilities/Environment (~> 6.0)
     - GoogleUtilities/UserDefaults (~> 6.0)
-  - FirebaseMessaging (4.1.0):
-    - FirebaseAnalyticsInterop (~> 1.1)
-    - FirebaseCore (~> 6.0)
+  - FirebaseMessaging (4.1.4):
+    - FirebaseAnalyticsInterop (~> 1.3)
+    - FirebaseCore (~> 6.2)
     - FirebaseInstanceID (~> 4.1)
     - GoogleUtilities/AppDelegateSwizzler (~> 6.2)
     - GoogleUtilities/Environment (~> 6.2)
     - GoogleUtilities/Reachability (~> 6.2)
     - GoogleUtilities/UserDefaults (~> 6.2)
     - Protobuf (~> 3.1)
-  - FirebasePerformance (3.1.0):
-    - FirebaseCore (~> 6.0)
+  - FirebasePerformance (3.1.4):
+    - FirebaseCore (~> 6.2)
     - FirebaseInstanceID (~> 4.2)
-    - FirebaseRemoteConfig (~> 4.1)
+    - FirebaseRemoteConfig (~> 4.4)
     - GoogleToolboxForMac/Logger (~> 2.1)
     - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
-    - GoogleUtilities/Environment (~> 6.0)
-    - GoogleUtilities/ISASwizzler (~> 6.0)
-    - GoogleUtilities/MethodSwizzler (~> 6.0)
+    - GoogleUtilities/Environment (~> 6.2)
+    - GoogleUtilities/ISASwizzler (~> 6.2)
+    - GoogleUtilities/MethodSwizzler (~> 6.2)
     - GTMSessionFetcher/Core (~> 1.1)
-    - Protobuf (~> 3.5)
-  - FirebaseRemoteConfig (4.1.0):
-    - FirebaseABTesting (~> 3.0)
-    - FirebaseCore (~> 6.0)
+    - Protobuf (~> 3.9)
+  - FirebaseRemoteConfig (4.4.0):
+    - FirebaseABTesting (~> 3.1)
+    - FirebaseAnalyticsInterop (~> 1.4)
+    - FirebaseCore (~> 6.2)
     - FirebaseInstanceID (~> 4.2)
-    - GoogleUtilities/Environment (~> 6.0)
-    - "GoogleUtilities/NSData+zlib (~> 6.0)"
-    - Protobuf (~> 3.5)
-  - FirebaseStorage (3.2.1):
+    - GoogleUtilities/Environment (~> 6.2)
+    - "GoogleUtilities/NSData+zlib (~> 6.2)"
+    - Protobuf (~> 3.9)
+  - FirebaseStorage (3.4.1):
     - FirebaseAuthInterop (~> 1.0)
     - FirebaseCore (~> 6.0)
     - GTMSessionFetcher/Core (~> 1.1)
-  - GoogleAppMeasurement (6.0.2):
+  - Folly (2018.10.22.00):
+    - boost-for-react-native
+    - DoubleConversion
+    - Folly/Default (= 2018.10.22.00)
+    - glog
+  - Folly/Default (2018.10.22.00):
+    - boost-for-react-native
+    - DoubleConversion
+    - glog
+  - glog (0.3.5)
+  - GoogleAppMeasurement (6.1.1):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
     - GoogleUtilities/Network (~> 6.0)
     - "GoogleUtilities/NSData+zlib (~> 6.0)"
     - nanopb (~> 0.3)
+  - GoogleDataTransport (1.2.0)
+  - GoogleDataTransportCCTSupport (1.0.3):
+    - GoogleDataTransport (~> 1.2)
+    - nanopb
   - GoogleToolboxForMac/Defines (2.2.1)
   - GoogleToolboxForMac/Logger (2.2.1):
     - GoogleToolboxForMac/Defines (= 2.2.1)
   - "GoogleToolboxForMac/NSData+zlib (2.2.1)":
     - GoogleToolboxForMac/Defines (= 2.2.1)
-  - GoogleUtilities/AppDelegateSwizzler (6.2.1):
+  - GoogleUtilities/AppDelegateSwizzler (6.2.5):
     - GoogleUtilities/Environment
     - GoogleUtilities/Logger
     - GoogleUtilities/Network
-  - GoogleUtilities/Environment (6.2.1)
-  - GoogleUtilities/ISASwizzler (6.2.1)
-  - GoogleUtilities/Logger (6.2.1):
+  - GoogleUtilities/Environment (6.2.5)
+  - GoogleUtilities/ISASwizzler (6.2.5)
+  - GoogleUtilities/Logger (6.2.5):
     - GoogleUtilities/Environment
-  - GoogleUtilities/MethodSwizzler (6.2.1):
+  - GoogleUtilities/MethodSwizzler (6.2.5):
     - GoogleUtilities/Logger
-  - GoogleUtilities/Network (6.2.1):
+  - GoogleUtilities/Network (6.2.5):
     - GoogleUtilities/Logger
     - "GoogleUtilities/NSData+zlib"
     - GoogleUtilities/Reachability
-  - "GoogleUtilities/NSData+zlib (6.2.1)"
-  - GoogleUtilities/Reachability (6.2.1):
+  - "GoogleUtilities/NSData+zlib (6.2.5)"
+  - GoogleUtilities/Reachability (6.2.5):
     - GoogleUtilities/Logger
-  - GoogleUtilities/UserDefaults (6.2.1):
+  - GoogleUtilities/UserDefaults (6.2.5):
     - GoogleUtilities/Logger
   - "gRPC-C++ (0.0.9)":
     - "gRPC-C++/Implementation (= 0.0.9)"
@@ -171,30 +197,131 @@ PODS:
     - nanopb (~> 0.3)
   - gRPC-Core/Interface (1.21.0)
   - GTMSessionFetcher/Core (1.2.2)
-  - leveldb-library (1.20)
+  - leveldb-library (1.22)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
-  - Protobuf (3.8.0)
+  - Protobuf (3.9.0)
+  - React (0.60.5):
+    - React-Core (= 0.60.5)
+    - React-DevSupport (= 0.60.5)
+    - React-RCTActionSheet (= 0.60.5)
+    - React-RCTAnimation (= 0.60.5)
+    - React-RCTBlob (= 0.60.5)
+    - React-RCTImage (= 0.60.5)
+    - React-RCTLinking (= 0.60.5)
+    - React-RCTNetwork (= 0.60.5)
+    - React-RCTSettings (= 0.60.5)
+    - React-RCTText (= 0.60.5)
+    - React-RCTVibration (= 0.60.5)
+    - React-RCTWebSocket (= 0.60.5)
+  - React-Core (0.60.5):
+    - Folly (= 2018.10.22.00)
+    - React-cxxreact (= 0.60.5)
+    - React-jsiexecutor (= 0.60.5)
+    - yoga (= 0.60.5.React)
+  - React-cxxreact (0.60.5):
+    - boost-for-react-native (= 1.63.0)
+    - DoubleConversion
+    - Folly (= 2018.10.22.00)
+    - glog
+    - React-jsinspector (= 0.60.5)
+  - React-DevSupport (0.60.5):
+    - React-Core (= 0.60.5)
+    - React-RCTWebSocket (= 0.60.5)
+  - React-jsi (0.60.5):
+    - boost-for-react-native (= 1.63.0)
+    - DoubleConversion
+    - Folly (= 2018.10.22.00)
+    - glog
+    - React-jsi/Default (= 0.60.5)
+  - React-jsi/Default (0.60.5):
+    - boost-for-react-native (= 1.63.0)
+    - DoubleConversion
+    - Folly (= 2018.10.22.00)
+    - glog
+  - React-jsiexecutor (0.60.5):
+    - DoubleConversion
+    - Folly (= 2018.10.22.00)
+    - glog
+    - React-cxxreact (= 0.60.5)
+    - React-jsi (= 0.60.5)
+  - React-jsinspector (0.60.5)
+  - React-RCTActionSheet (0.60.5):
+    - React-Core (= 0.60.5)
+  - React-RCTAnimation (0.60.5):
+    - React-Core (= 0.60.5)
+  - React-RCTBlob (0.60.5):
+    - React-Core (= 0.60.5)
+    - React-RCTNetwork (= 0.60.5)
+    - React-RCTWebSocket (= 0.60.5)
+  - React-RCTImage (0.60.5):
+    - React-Core (= 0.60.5)
+    - React-RCTNetwork (= 0.60.5)
+  - React-RCTLinking (0.60.5):
+    - React-Core (= 0.60.5)
+  - React-RCTNetwork (0.60.5):
+    - React-Core (= 0.60.5)
+  - React-RCTSettings (0.60.5):
+    - React-Core (= 0.60.5)
+  - React-RCTText (0.60.5):
+    - React-Core (= 0.60.5)
+  - React-RCTVibration (0.60.5):
+    - React-Core (= 0.60.5)
+  - React-RCTWebSocket (0.60.5):
+    - React-Core (= 0.60.5)
+  - RNFirebase (5.5.6):
+    - Firebase/Core
+    - React
+    - RNFirebase/Crashlytics (= 5.5.6)
+  - RNFirebase/Crashlytics (5.5.6):
+    - Crashlytics
+    - Fabric
+    - Firebase/Core
+    - React
+  - yoga (0.60.5.React)
 
 DEPENDENCIES:
-  - Crashlytics (~> 3.13.2)
+  - Crashlytics (~> 3.13.4)
+  - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Fabric (~> 1.10.2)
-  - Firebase/Auth (~> 6.3.0)
-  - Firebase/Core (~> 6.3.0)
-  - Firebase/Database (~> 6.3.0)
-  - Firebase/DynamicLinks (~> 6.3.0)
-  - Firebase/Firestore (~> 6.3.0)
-  - Firebase/Functions (~> 6.3.0)
-  - Firebase/Messaging (~> 6.3.0)
-  - Firebase/Performance (~> 6.3.0)
-  - Firebase/RemoteConfig (~> 6.3.0)
-  - Firebase/Storage (~> 6.3.0)
+  - Firebase/Auth (~> 6.8.0)
+  - Firebase/Core (~> 6.8.0)
+  - Firebase/Database (~> 6.8.0)
+  - Firebase/DynamicLinks (~> 6.8.0)
+  - Firebase/Firestore (~> 6.8.0)
+  - Firebase/Functions (~> 6.8.0)
+  - Firebase/Messaging (~> 6.8.0)
+  - Firebase/Performance (~> 6.8.0)
+  - Firebase/RemoteConfig (~> 6.8.0)
+  - Firebase/Storage (~> 6.8.0)
+  - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
+  - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
+  - React (from `../node_modules/react-native/`)
+  - React-Core (from `../node_modules/react-native/React`)
+  - React-cxxreact (from `../node_modules/react-native/ReactCommon/cxxreact`)
+  - React-DevSupport (from `../node_modules/react-native/React`)
+  - React-jsi (from `../node_modules/react-native/ReactCommon/jsi`)
+  - React-jsiexecutor (from `../node_modules/react-native/ReactCommon/jsiexecutor`)
+  - React-jsinspector (from `../node_modules/react-native/ReactCommon/jsinspector`)
+  - React-RCTActionSheet (from `../node_modules/react-native/Libraries/ActionSheetIOS`)
+  - React-RCTAnimation (from `../node_modules/react-native/Libraries/NativeAnimation`)
+  - React-RCTBlob (from `../node_modules/react-native/Libraries/Blob`)
+  - React-RCTImage (from `../node_modules/react-native/Libraries/Image`)
+  - React-RCTLinking (from `../node_modules/react-native/Libraries/LinkingIOS`)
+  - React-RCTNetwork (from `../node_modules/react-native/Libraries/Network`)
+  - React-RCTSettings (from `../node_modules/react-native/Libraries/Settings`)
+  - React-RCTText (from `../node_modules/react-native/Libraries/Text`)
+  - React-RCTVibration (from `../node_modules/react-native/Libraries/Vibration`)
+  - React-RCTWebSocket (from `../node_modules/react-native/Libraries/WebSocket`)
+  - RNFirebase (from `../node_modules/react-native-firebase/ios`)
+  - yoga (from `../node_modules/react-native/ReactCommon/yoga`)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - boost-for-react-native
     - BoringSSL-GRPC
     - Crashlytics
     - Fabric
@@ -205,6 +332,8 @@ SPEC REPOS:
     - FirebaseAuth
     - FirebaseAuthInterop
     - FirebaseCore
+    - FirebaseCoreDiagnostics
+    - FirebaseCoreDiagnosticsInterop
     - FirebaseDatabase
     - FirebaseDynamicLinks
     - FirebaseFirestore
@@ -215,6 +344,8 @@ SPEC REPOS:
     - FirebaseRemoteConfig
     - FirebaseStorage
     - GoogleAppMeasurement
+    - GoogleDataTransport
+    - GoogleDataTransportCCTSupport
     - GoogleToolboxForMac
     - GoogleUtilities
     - "gRPC-C++"
@@ -224,36 +355,109 @@ SPEC REPOS:
     - nanopb
     - Protobuf
 
+EXTERNAL SOURCES:
+  DoubleConversion:
+    :podspec: "../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec"
+  Folly:
+    :podspec: "../node_modules/react-native/third-party-podspecs/Folly.podspec"
+  glog:
+    :podspec: "../node_modules/react-native/third-party-podspecs/glog.podspec"
+  React:
+    :path: "../node_modules/react-native/"
+  React-Core:
+    :path: "../node_modules/react-native/React"
+  React-cxxreact:
+    :path: "../node_modules/react-native/ReactCommon/cxxreact"
+  React-DevSupport:
+    :path: "../node_modules/react-native/React"
+  React-jsi:
+    :path: "../node_modules/react-native/ReactCommon/jsi"
+  React-jsiexecutor:
+    :path: "../node_modules/react-native/ReactCommon/jsiexecutor"
+  React-jsinspector:
+    :path: "../node_modules/react-native/ReactCommon/jsinspector"
+  React-RCTActionSheet:
+    :path: "../node_modules/react-native/Libraries/ActionSheetIOS"
+  React-RCTAnimation:
+    :path: "../node_modules/react-native/Libraries/NativeAnimation"
+  React-RCTBlob:
+    :path: "../node_modules/react-native/Libraries/Blob"
+  React-RCTImage:
+    :path: "../node_modules/react-native/Libraries/Image"
+  React-RCTLinking:
+    :path: "../node_modules/react-native/Libraries/LinkingIOS"
+  React-RCTNetwork:
+    :path: "../node_modules/react-native/Libraries/Network"
+  React-RCTSettings:
+    :path: "../node_modules/react-native/Libraries/Settings"
+  React-RCTText:
+    :path: "../node_modules/react-native/Libraries/Text"
+  React-RCTVibration:
+    :path: "../node_modules/react-native/Libraries/Vibration"
+  React-RCTWebSocket:
+    :path: "../node_modules/react-native/Libraries/WebSocket"
+  RNFirebase:
+    :path: "../node_modules/react-native-firebase/ios"
+  yoga:
+    :path: "../node_modules/react-native/ReactCommon/yoga"
+
 SPEC CHECKSUMS:
+  boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
-  Crashlytics: 611738c7847f8291a1a51084e35987b86ba6b3ee
+  Crashlytics: 2dfd686bcb918dc10ee0e76f7f853fe42c7bd552
+  DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
-  Firebase: 8432d732974498afd5987e9001a05f90f1a3d625
-  FirebaseABTesting: a32c488eb75089a61eb3d86db061dfb909d765db
-  FirebaseAnalytics: 470ddab7253b21ad5a40bebd4a9903d7ae19386a
-  FirebaseAnalyticsInterop: efbe45c8385ec626e29f9525e5ebd38520dfb6c1
-  FirebaseAuth: 7fa2cc010b93770831a4e7a60651b52c3b8d111a
+  Firebase: 9cbe4e5b5eaafa05dc932be58b7c8c3820d71e88
+  FirebaseABTesting: 662e8de812ceb5d57ad66381f6402f4d28dc5c91
+  FirebaseAnalytics: 843c7f64a8f9c79f0d03281197ebe7bb1d58d477
+  FirebaseAnalyticsInterop: d48b6ab67bcf016a05e55b71fc39c61c0cb6b7f3
+  FirebaseAuth: e7f86c2dfc57281cd01f7da5e4b40e01e4510a4a
   FirebaseAuthInterop: 0ffa57668be100582bb7643d4fcb7615496c41fc
-  FirebaseCore: 68f8a7f50cdae542715d4e86afa37c4067217dcb
-  FirebaseDatabase: f48e067716864be2b855cf716b927ef375d6cfa0
-  FirebaseDynamicLinks: 25fc45fdf2557ee2ee630999c301245d8911792e
-  FirebaseFirestore: 75768d91aad491eccdc02202b8161cff9872300e
+  FirebaseCore: e9d9bd1dae61c1e82bc1e0e617a9d832392086a0
+  FirebaseCoreDiagnostics: 4c04ae09d0ab027c30179828c6bb47764df1bd13
+  FirebaseCoreDiagnosticsInterop: 6829da2b8d1fc795ff1bd99df751d3788035d2cb
+  FirebaseDatabase: 518cd94286de2ee999e19383a2a6ae04c81ce993
+  FirebaseDynamicLinks: db62e9da4788f9c5ebce2028dab933a0c158cfe2
+  FirebaseFirestore: c5873e279490fbe02239ab2cdfb91c2d546261cc
   FirebaseFunctions: 5af7c35d1c5e41608fecbb667eb6c4e672e318d0
-  FirebaseInstanceID: f20243a1d828e0e9a3798b995174dedc16f1b32a
-  FirebaseMessaging: 0ac5310133e6ada4cdd44d42e92038855214a5e9
-  FirebasePerformance: 1cf814c294cb0f6e0d36cde0760d09835b13c9ce
-  FirebaseRemoteConfig: 7c64ecec5ca63d7c6b304509c3a6f9a036d403d4
-  FirebaseStorage: 926d41552072b9fee67aa645760f05f87b7ce604
-  GoogleAppMeasurement: a35a645835bae31b6bdc0576396bc23908f12a22
+  FirebaseInstanceID: 550df9be1f99f751d8fcde3ac342a1e21a0e6c42
+  FirebaseMessaging: 9483ac438b7b223c09dad8712310e9ee7d562c99
+  FirebasePerformance: a28490ad3b116380ff2d8300a67051626d01d09e
+  FirebaseRemoteConfig: a1b49ebfddeaccda10d76fd8dc2cc1aa215f9c43
+  FirebaseStorage: b7c6d00997bc21d4465453bdcc5cc65513110fed
+  Folly: 30e7936e1c45c08d884aa59369ed951a8e68cf51
+  glog: 1f3da668190260b06b429bb211bfbee5cd790c28
+  GoogleAppMeasurement: 86a82f0e1f20b8eedf8e20326530138fd71409de
+  GoogleDataTransport: 8f9897b8e073687f24ca8d3c3a8013dec7d2d1cc
+  GoogleDataTransportCCTSupport: 51134d81fca795c60cc247d1cb6af63c3d67b8d8
   GoogleToolboxForMac: b3553629623a3b1bff17f555e736cd5a6d95ad55
-  GoogleUtilities: c7a0b08bda3bf808be823ed151f0e28ac6866e71
+  GoogleUtilities: e7dc37039b19df7fe543479d3e4a02ac8d11bb69
   "gRPC-C++": 9dfe7b44821e7b3e44aacad2af29d2c21f7cde83
   gRPC-Core: c9aef9a261a1247e881b18059b84d597293c9947
   GTMSessionFetcher: 61bb0f61a4cb560030f1222021178008a5727a23
-  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  leveldb-library: 55d93ee664b4007aac644a782d11da33fba316f7
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
-  Protobuf: 3f617b9a6e73605565086864c9bc26b2bf2dd5a3
+  Protobuf: 1097ca58584c8d9be81bfbf2c5ff5975648dd87a
+  React: 53c53c4d99097af47cf60594b8706b4e3321e722
+  React-Core: ba421f6b4f4cbe2fb17c0b6fc675f87622e78a64
+  React-cxxreact: 8384287780c4999351ad9b6e7a149d9ed10a2395
+  React-DevSupport: 197fb409737cff2c4f9986e77c220d7452cb9f9f
+  React-jsi: 4d8c9efb6312a9725b18d6fc818ffc103f60fec2
+  React-jsiexecutor: 90ad2f9db09513fc763bc757fdc3c4ff8bde2a30
+  React-jsinspector: e08662d1bf5b129a3d556eb9ea343a3f40353ae4
+  React-RCTActionSheet: b0f1ea83f4bf75fb966eae9bfc47b78c8d3efd90
+  React-RCTAnimation: 359ba1b5690b1e87cc173558a78e82d35919333e
+  React-RCTBlob: 5e2b55f76e9a1c7ae52b826923502ddc3238df24
+  React-RCTImage: f5f1c50922164e89bdda67bcd0153952a5cfe719
+  React-RCTLinking: d0ecbd791e9ddddc41fa1f66b0255de90e8ee1e9
+  React-RCTNetwork: e26946300b0ab7bb6c4a6348090e93fa21f33a9d
+  React-RCTSettings: d0d37cb521b7470c998595a44f05847777cc3f42
+  React-RCTText: b074d89033583d4f2eb5faf7ea2db3a13c7553a2
+  React-RCTVibration: 2105b2e0e2b66a6408fc69a46c8a7fb5b2fdade0
+  React-RCTWebSocket: cd932a16b7214898b6b7f788c8bddb3637246ac4
+  RNFirebase: ac0de8b24c6f91ae9459575491ed6a77327619c6
+  yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 
-PODFILE CHECKSUM: 540f9c9b43e250c2337caadac424c09cc8900e2c
+PODFILE CHECKSUM: d3bbcccc3055c2efb03b682599ef54b449884839
 
-COCOAPODS: 1.7.2
+COCOAPODS: 1.7.5

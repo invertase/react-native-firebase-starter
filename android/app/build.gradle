@@ -20,6 +20,9 @@ import com.android.build.OutputFile
  *   // the entry file for bundle generation
  *   entryFile: "index.android.js",
  *
+ *   // https://facebook.github.io/react-native/docs/performance#enable-the-ram-format
+ *   bundleCommand: "ram-bundle",
+ *
  *   // whether to bundle JS and assets in debug mode
  *   bundleInDebug: false,
  *
@@ -76,6 +79,7 @@ import com.android.build.OutputFile
 
 project.ext.react = [
     entryFile: "index.js",
+    enableHermes: false,  // clean and rebuild if changing
 
     // Sometimes (like if you use Android API<17) adb forwards don't work, so you need a bundle in the dev APK
     bundleInDebug: project.hasProperty("bundleInDebug") ? project.getProperty("bundleInDebug") : false,
@@ -98,6 +102,28 @@ def enableSeparateBuildPerCPUArchitecture = false
  */
 def enableProguardInReleaseBuilds = false
 
+/**
+ * The preferred build flavor of JavaScriptCore.
+ *
+ * For example, to use the international variant, you can use:
+ * `def jscFlavor = 'org.webkit:android-jsc-intl:+'`
+ *
+ * The international variant includes ICU i18n library and necessary data
+ * allowing to use e.g. `Date.toLocaleString` and `String.localeCompare` that
+ * give correct results when using with locales other than en-US.  Note that
+ * this variant is about 6MiB larger per architecture than default.
+ */
+def jscFlavor = 'org.webkit:android-jsc:+'
+
+/**
+ * Whether to enable the Hermes VM.
+ *
+ * This should be set on project.ext.react and mirrored here.  If it is not set
+ * on project.ext.react, JavaScript will not be compiled to Hermes Bytecode
+ * and the benefits of using Hermes will therefore be sharply reduced.
+ */
+def enableHermes = project.ext.react.get("enableHermes", false);
+
 android {
     compileSdkVersion rootProject.ext.compileSdkVersion
 
@@ -116,6 +142,14 @@ android {
         // Needed to support API<21, though there is a small chance proguard shrinks things sufficiently
         multiDexEnabled true
     }
+    signingConfigs {
+        debug {
+            storeFile file('debug.keystore')
+            storePassword 'android'
+            keyAlias 'androiddebugkey'
+            keyPassword 'android'
+        }
+    }
     splits {
         abi {
             reset()
@@ -125,7 +159,13 @@ android {
         }
     }
     buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+        }
         release {
+            // Caution! In production, you need to generate your own keystore file.
+            // see https://facebook.github.io/react-native/docs/signed-apk-android.
+            signingConfig signingConfigs.debug
             minifyEnabled enableProguardInReleaseBuilds
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
@@ -134,14 +174,22 @@ android {
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             // For each separate APK per architecture, set a unique version code as described here:
-            // http://tools.android.com/tech-docs/new-build-system/user-guide/apk-splits
-            def versionCodes = ["armeabi-v7a":1, "x86":2, "arm64-v8a": 3, "x86_64": 4]
+            // https://developer.android.com/studio/build/configure-apk-splits.html
+            def versionCodes = ["armeabi-v7a": 1, "x86": 2, "arm64-v8a": 3, "x86_64": 4]
             def abi = output.getFilter(OutputFile.ABI)
             if (abi != null) {  // null for the universal-debug, universal-release variants
                 output.versionCodeOverride =
                         versionCodes.get(abi) * 1048576 + defaultConfig.versionCode
             }
         }
+    }
+    packagingOptions {
+        pickFirst '**/armeabi-v7a/libc++_shared.so'
+        pickFirst '**/x86/libc++_shared.so'
+        pickFirst '**/arm64-v8a/libc++_shared.so'
+        pickFirst '**/x86_64/libc++_shared.so'
+        pickFirst '**/x86/libjsc.so'
+        pickFirst '**/armeabi-v7a/libjsc.so'
     }
 }
 
@@ -153,46 +201,45 @@ dependencies {
     *    REACT NATIVE FIREBASE
     * ---------------------------- */
 
-    // Library as defined in settings.gradle
-    implementation project(path: ':react-native-firebase')
+    // Firebase bom setup
+    implementation platform("com.google.firebase:firebase-bom:22.2.0")
 
     // Required dependencies
     //noinspection GradleCompatible
-    implementation "com.google.firebase:firebase-core:16.0.9"
-    implementation "com.google.android.gms:play-services-base:16.1.0"
+    implementation "com.google.firebase:firebase-core"
 
     /* -------------------------
     *   OPTIONAL FIREBASE SDKS
     * ------------------------- */
 
-    implementation('com.google.firebase:firebase-ads:15.0.1') {
+    implementation('com.google.firebase:firebase-ads') {
       // exclude `customtabs` as the support lib version is out of date
       // we manually add it as a dependency below with a custom version
       exclude group: 'com.android.support', module: 'customtabs'
     }
 
     // Authentication
-    implementation "com.google.firebase:firebase-auth:17.0.0"
+    implementation "com.google.firebase:firebase-auth"
     // Analytics
-    implementation "com.google.firebase:firebase-analytics:16.5.0"
+    implementation "com.google.firebase:firebase-analytics"
     // Performance Monitoring
-    implementation "com.google.firebase:firebase-perf:17.0.0"
+    implementation "com.google.firebase:firebase-perf"
     // Remote Config
-    implementation "com.google.firebase:firebase-config:17.0.0"
+    implementation "com.google.firebase:firebase-config"
     // Cloud Storage
-    implementation "com.google.firebase:firebase-storage:17.0.0"
+    implementation "com.google.firebase:firebase-storage"
     // Dynamic Links
-    implementation "com.google.firebase:firebase-dynamic-links:17.0.0"
+    implementation "com.google.firebase:firebase-dynamic-links"
     // Real-time Database
-    implementation "com.google.firebase:firebase-database:17.0.0"
+    implementation "com.google.firebase:firebase-database"
     // Cloud Functions
-    implementation "com.google.firebase:firebase-functions:17.0.0"
+    implementation "com.google.firebase:firebase-functions"
     // Cloud Firestore
-    implementation "com.google.firebase:firebase-firestore:19.0.2"
+    implementation "com.google.firebase:firebase-firestore"
     // Cloud Messaging / FCM
-    implementation "com.google.firebase:firebase-messaging:18.0.0"
+    implementation "com.google.firebase:firebase-messaging"
     // Crashlytics
-    implementation('com.crashlytics.sdk.android:crashlytics:2.9.9@aar') {
+    implementation('com.crashlytics.sdk.android:crashlytics@aar') {
         transitive = true
     }
 
@@ -201,14 +248,22 @@ dependencies {
     * -------------------------------- */
 
     // Needed to support API<21, though there is a small chance proguard shrinks things sufficiently
-    implementation "com.android.support:multidex:1.0.3"
+    implementation "androidx.multidex:multidex:2.0.1"
 
     // For Firebase Ads
     //noinspection GradleCompatible
-    implementation "com.android.support:customtabs:27.1.1"
+    implementation "com.android.support:customtabs:28.0.0"
 
     // For React Native Firebase Notifications
     implementation 'me.leolin:ShortcutBadger:1.1.22@aar'
+
+    if (enableHermes) {
+      def hermesPath = "../../node_modules/hermesvm/android/";
+      debugImplementation files(hermesPath + "hermes-debug.aar")
+      releaseImplementation files(hermesPath + "hermes-release.aar")
+    } else {
+      implementation jscFlavor
+    }
 }
 
 // Run this once to be able to run the application with BUCK
@@ -219,3 +274,5 @@ task copyDownloadableDepsToLibs(type: Copy) {
 }
 
 apply plugin: 'com.google.gms.google-services'
+
+apply from: file("../../node_modules/@react-native-community/cli-platform-android/native_modules.gradle"); applyNativeModulesAppBuildGradle(project)
