@@ -45,7 +45,7 @@ target 'RNFirebaseStarter' do
   pod 'Firebase/Storage', '~> 6.8.1'
   pod 'Firebase/Performance', '~> 6.8.1'
   pod 'Fabric', '~> 1.10.2'
-  pod 'Crashlytics', '~> 3.14.0 '
+  pod 'Crashlytics', '~> 3.14.0'
 
   target 'RNFirebaseStarterTests' do
     inherit! :search_paths
