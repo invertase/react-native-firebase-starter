@@ -6,7 +6,7 @@ PODS:
   - BoringSSL-GRPC/Implementation (0.0.3):
     - BoringSSL-GRPC/Interface (= 0.0.3)
   - BoringSSL-GRPC/Interface (0.0.3)
-  - Crashlytics (3.13.4):
+  - Crashlytics (3.14.0):
     - Fabric (~> 1.10.2)
   - DoubleConversion (1.1.6)
   - Fabric (1.10.2)
@@ -284,19 +284,19 @@ PODS:
   - yoga (0.60.5.React)
 
 DEPENDENCIES:
-  - Crashlytics (~> 3.13.4)
+  - Crashlytics (~> 3.14.0)
   - DoubleConversion (from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`)
   - Fabric (~> 1.10.2)
-  - Firebase/Auth (~> 6.8.0)
-  - Firebase/Core (~> 6.8.0)
-  - Firebase/Database (~> 6.8.0)
-  - Firebase/DynamicLinks (~> 6.8.0)
-  - Firebase/Firestore (~> 6.8.0)
-  - Firebase/Functions (~> 6.8.0)
-  - Firebase/Messaging (~> 6.8.0)
-  - Firebase/Performance (~> 6.8.0)
-  - Firebase/RemoteConfig (~> 6.8.0)
-  - Firebase/Storage (~> 6.8.0)
+  - Firebase/Auth (~> 6.8.1)
+  - Firebase/Core (~> 6.8.1)
+  - Firebase/Database (~> 6.8.1)
+  - Firebase/DynamicLinks (~> 6.8.1)
+  - Firebase/Firestore (~> 6.8.1)
+  - Firebase/Functions (~> 6.8.1)
+  - Firebase/Messaging (~> 6.8.1)
+  - Firebase/Performance (~> 6.8.1)
+  - Firebase/RemoteConfig (~> 6.8.1)
+  - Firebase/Storage (~> 6.8.1)
   - Folly (from `../node_modules/react-native/third-party-podspecs/Folly.podspec`)
   - glog (from `../node_modules/react-native/third-party-podspecs/glog.podspec`)
   - React (from `../node_modules/react-native/`)
@@ -404,7 +404,7 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   BoringSSL-GRPC: db8764df3204ccea016e1c8dd15d9a9ad63ff318
-  Crashlytics: 2dfd686bcb918dc10ee0e76f7f853fe42c7bd552
+  Crashlytics: 540b7e5f5da5a042647227a5e3ac51d85eed06df
   DoubleConversion: 5805e889d232975c086db112ece9ed034df7a0b2
   Fabric: 706c8b8098fff96c33c0db69cbf81f9c551d0d74
   Firebase: 9cbe4e5b5eaafa05dc932be58b7c8c3820d71e88
@@ -458,6 +458,6 @@ SPEC CHECKSUMS:
   RNFirebase: ac0de8b24c6f91ae9459575491ed6a77327619c6
   yoga: 312528f5bbbba37b4dcea5ef00e8b4033fdd9411
 
-PODFILE CHECKSUM: d3bbcccc3055c2efb03b682599ef54b449884839
+PODFILE CHECKSUM: 12ed60d945a80fb42e8241d7a11d158947e145b1
 
 COCOAPODS: 1.7.5

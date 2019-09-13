@@ -31,21 +31,21 @@ target 'RNFirebaseStarter' do
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
 
   # Required by RNFirebase
-  pod 'Firebase/Core', '~> 6.8.0'
+  pod 'Firebase/Core', '~> 6.8.1'
 
   # [OPTIONAL PODS] - comment out pods for firebase products you won't be using.
-  # pod 'Firebase/AdMob', '~> 6.3.0'
-  pod 'Firebase/Auth', '~> 6.8.0'
-  pod 'Firebase/Database', '~> 6.8.0'
-  pod 'Firebase/Functions', '~> 6.8.0'
-  pod 'Firebase/DynamicLinks', '~> 6.8.0'
-  pod 'Firebase/Firestore', '~> 6.8.0'
-  pod 'Firebase/Messaging', '~> 6.8.0'
-  pod 'Firebase/RemoteConfig', '~> 6.8.0'
-  pod 'Firebase/Storage', '~> 6.8.0'
-  pod 'Firebase/Performance', '~> 6.8.0'
+  # pod 'Firebase/AdMob', '~> 6.8.1'
+  pod 'Firebase/Auth', '~> 6.8.1'
+  pod 'Firebase/Database', '~> 6.8.1'
+  pod 'Firebase/Functions', '~> 6.8.1'
+  pod 'Firebase/DynamicLinks', '~> 6.8.1'
+  pod 'Firebase/Firestore', '~> 6.8.1'
+  pod 'Firebase/Messaging', '~> 6.8.1'
+  pod 'Firebase/RemoteConfig', '~> 6.8.1'
+  pod 'Firebase/Storage', '~> 6.8.1'
+  pod 'Firebase/Performance', '~> 6.8.1'
   pod 'Fabric', '~> 1.10.2'
-  pod 'Crashlytics', '~> 3.13.4'
+  pod 'Crashlytics', '~> 3.14.0'
 
   target 'RNFirebaseStarterTests' do
     inherit! :search_paths
