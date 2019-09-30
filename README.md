@@ -13,6 +13,8 @@ A basic react native app with [`react-native-firebase`](https://github.com/inver
 
 ---
 
+> **DEPRECATED**: This is for RNFB v5 only. For v6 onwards please follow the [new projects guide](https://invertase.io/oss/react-native-firebase/quick-start/new-project).
+
 
 ### Getting Started
 
