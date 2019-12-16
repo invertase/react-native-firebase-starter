@@ -202,15 +202,11 @@ dependencies {
     * ---------------------------- */
 
     // Firebase bom setup
-    implementation platform("com.google.firebase:firebase-bom:22.2.0")
+    implementation platform("com.google.firebase:firebase-bom:24.3.0")
 
-    // Required dependencies
-    //noinspection GradleCompatible
-    implementation "com.google.firebase:firebase-core"
-
-    /* -------------------------
-    *   OPTIONAL FIREBASE SDKS
-    * ------------------------- */
+    /* ----------------
+    *   FIREBASE SDKS
+    * ----------------- */
 
     implementation('com.google.firebase:firebase-ads') {
       // exclude `customtabs` as the support lib version is out of date
