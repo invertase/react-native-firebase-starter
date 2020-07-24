@@ -1,3 +1,8 @@
+# DEPRECATED
+
+> **DEPRECATED**: This is for RNFB v5 only. For v6 onwards please follow the [new projects guide](https://invertase.io/oss/react-native-firebase/quick-start/new-project).
+
+---
 ## React Native Firebase Starter<a href="https://invertase.io/oss/react-native-firebase"><img align="left" src="https://i.imgur.com/JIyBtKW.png" width="180px"></a>
 
 [![Backers on Open Collective](https://opencollective.com/react-native-firebase/backers/badge.svg)](#backers)
@@ -13,8 +18,11 @@ A basic react native app with [`react-native-firebase`](https://github.com/inver
 
 ---
 
+# DEPRECATED
+
 > **DEPRECATED**: This is for RNFB v5 only. For v6 onwards please follow the [new projects guide](https://invertase.io/oss/react-native-firebase/quick-start/new-project).
 
+---
 
 ### Getting Started
 
